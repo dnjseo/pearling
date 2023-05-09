@@ -1,0 +1,23 @@
+/* ==================== reset ==================== */
+
+body,
+h1,
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ==================== utils ==================== */
+
+
+/* ==================== display ==================== */
+.d-none{
+    display: none;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
