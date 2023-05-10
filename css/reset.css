@@ -2,8 +2,17 @@
 
 body,
 h1,
+p,
+ul,
+li,
+div,
 p{
     margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    padding: 0 12px;
 }
 
 a{
