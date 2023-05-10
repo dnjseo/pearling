@@ -2,12 +2,22 @@
 
 body,
 h1,
+p,
+ul,
+li,
+div,
 p{
     margin: 0;
+    padding: 0;
 }
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
 }
 
 /* ==================== utils ==================== */
