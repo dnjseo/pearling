@@ -115,11 +115,7 @@
     .follow p:nth-child(1){
         margin-right: 10%;
     }
-
-    .follow p:nth-child(2){
-
-    }
-
+    
     .menu_list ul li a{ 
         box-sizing: border-box;
         /* Auto layout */
