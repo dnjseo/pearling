@@ -1,0 +1,99 @@
+@media screen and (min-width:0px) and (max-width:500px){
+    body{
+        background-color: rgba(0, 0, 0, 0.04);
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width: 501px) and (max-width:1024px){
+    body{
+        background-color: red;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.qa_list.wrap{
+    padding: 50px;
+}
+
+.qa_list_head,
+.qa_list_body .item {
+    text-align: center;
+    padding: 10px;
+    font-size: 0;
+}
+
+.qa_list_head {
+    border-top: 2px solid #615E5E;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.qa_list_body .item {
+    border-bottom: 1px solid #ccc;
+}
+
+.qa_list_head > div
+{
+    text-align: center;
+    font-size: 14px;
+}
+.qa_list_body .item > div {
+    display: inline-block;
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.qa_list_head > div {
+    font-weight: 600;
+}
+
+.qa_list .num {
+    width: 15%;
+    padding-left: 12px;
+}
+
+.qa_list .answer {
+    width: 20%;
+    padding-right: 12px;
+}
+
+.qa_list_body div.answer {
+    text-align: center;
+}
+
+.qa_list .title {
+    width: 20%;
+    padding-left: 24px;
+    text-align: left;
+}
+
+.qa_list_body div.title a:hover {
+    text-decoration: underline;
+}
+
+.qa_list .secret {
+    background: url("../images/key.png");
+    width: 12px;
+    height: 13px;
+}
+
+.qa_list .date {
+    width:25%;
+    padding-left: 24px;
+    padding-right: 0;
+}
