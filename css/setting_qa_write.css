@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.qa_write_wrap{
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.qa_write{
+    margin-bottom: 30px;
+}
+
+.write_cont{
+    border-top: 2px solid #D9D9D9;
+}
+
+.title,
+.context{
+    padding: 15px;
+}
+
+.qa_write .context{
+    boder-top: 1px dashed #fff;
+    boder-bottom: 2px solid #d9d9d9;
+    font-size: 0;
+}
+
