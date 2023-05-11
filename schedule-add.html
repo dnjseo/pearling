@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/schdule-add.css" type="text/css" rel="stylesheet">
+    <title>schedule-add</title>
+</head>
+
+<body>
+    <div id="schedule-add-wrap" class="schedule-add-wrap">
+        <section>
+            <h1>일정 추가</h1>
+            <div id="schdule-add-title" class="schdule-add-title">
+                <form>
+                    <label for="schedule-title">일정 제목</label>
+                    <input type="text" id="schedule-title" name="schedule-title">
+                    <input type="submit" value="확인">
+                </form>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------------------------ -->
+            <div id="schedule-add-date" class="schedule-add-date">
+                <form>
+                    <label for="start-date">시작일:</label>
+                    <input type="date" id="start-date" name="start-date" value="2023-05-09" min="2000-01-01"
+                        max="2099-12-31">
+                    </br>
+                    <label for="end-date">종료일:</label>
+                    <input type="date" id="end-date" name="end-date" value="2023-05-09" min="2000-01-01"
+                        max="2099-12-31">
+                </form>
+            </div>
+            <div id="schedule-add-location" class="schedule-add-location">
+                <form>
+                    <label for="location-add">장소 추가</label>
+                    <input type="button" id="location-add" name="location-add">
+                </form>
+            </div>
+            <div id="schedule-add-freind-wrap" class="schedule-add-freind-wrap">
+                <div>
+                    <label for="freind-tag">친구 태그</label>
+                    <input type="button" id="freind-tag" name="freind-tag">
+                </div>
+            </div>
+            <div id="schedule-add-color-wrap" class="schedule-add-color-wrap">
+                <div>
+                    <label for="color-tag">컬러 팔레트</label>
+                    <input type="button" id="color-tag" name="color-tag">
+                </div>
+            </div>
+            <div id="schedule-add-submit" class="schedule-add-submit">
+                <input type="submit" value="취소">
+                <input type="submit" value="확인">
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
