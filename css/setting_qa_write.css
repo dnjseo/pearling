@@ -13,8 +13,9 @@
         top: 293px;
     
     }
-    .mainlogo{
+    .mainlogo{ 
         position: absolute;
+        
         width: 244px;
         height: 49px;
         left: 50%;
@@ -29,71 +30,54 @@
     }
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.qa_wrap{
+.qa_write_wrap {
     width: 1000px;
     margin: 100px auto;
 }
 
-.qa_title{
-    margin-bottom: 30px;
-}
-
-.board_title strong {
-    font-size: 3rem;
-}
-
-.board_title p {
-    margin-top: 5px;
-    font-size: 1.4rem;
-}
-
-.bt_wrap {
+.button_wrap {
     margin-top: 30px;
     text-align: center;
     font-size: 0;
 }
 
-.bt_wrap a {
+.button_wrap a {
     display: inline-block;
     min-width: 80px;
     margin-left: 10px;
     padding: 10px;
-    border: 1px solid #000;
+    border: 1px solid #d9d9d9;
     border-radius: 2px;
-    font-size: 1.4rem;
+    font-size: 12pt;
+    
 }
 
-.bt_wrap a:first-child {
+.button_wrap a:first-child {
     margin-left: 0;
 }
 
-.bt_wrap a.on {
-    background: #000;
+.button_wrap a.on {
+    background: #d9d9d9;
     color: #fff;
 }
 
-.write_cont{
-    border-top: 2px solid #D9D9D9;
+.qa_write {
+    border-top: 2px solid #d9d9d9;
 }
 
-.title,
-.context{
-    padding: 15px;
+.qa_write .title,
+.qa_write .info {
+    padding: 10px;
 }
 
-.qa_write .context{
-    boder-top: 1px dashed #000000;
-    boder-bottom: 2px solid #d9d9d9;
+.qa_write .info {
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px solid #d9d9d9;
     font-size: 0;
 }
 
@@ -101,38 +85,52 @@ a{
     font-size: 0;
 }
 
+.qa_write .info dl {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
 .qa_write .title dt,
-.qa_write .context dt
-{
+.qa_write .title dd,
+.qa_write .info dt,
+.qa_write .info dd {
     display: inline-block;
     vertical-align: middle;
-    font-size: 1.4rem;
-
-    width: 100px;
+    font-size: 12pt;
+    margin: 5px;
 }
 
+.qa_write .title dt,
+.qa_write .info dt {
+    width: 75px;
+}
 
-.board_write .title dd {
+.qa_write .title dd {
     width: calc(100% - 100px);
+    margin-left: 4px;
 }
 
-.board_write .title input[type="text"]{
+.qa_write .title input[type="text"],
+.qa_write .info input[type="password"] {
     padding: 10px;
-    box-sizing: border-box;
-
-    width: 80%;
+    box-sizing: border-box 1px solid #d9d9d9;
 }
 
-.board_write .context {
-    border-bottom: 1px solid #000;
+.qa_write .title input[type="text"] {
+    width: 50%;
 }
 
-.board_write .context textarea {
+.qa_write .context {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.qa_write .context textarea {
     display: block;
     width: 100%;
     height: 300px;
     padding: 15px;
     box-sizing: border-box;
     border: 0;
-    resize: vertical;
+    resize: both;
 }
