@@ -4,50 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/import.css" type="text/css" rel="stylesheet" >
     <link href="./css/yeonding-main.css" type="text/css" rel="stylesheet" >
+    <script src="./js/header.js"></script>
     <title>Pearl-ing</title>
 </head>
 <body>
-   <div class = "wrap">
 
-        <section id="shellMenu">
-            <button id="menuOurShell"></button>
-            <button id="menuMyShell"></button> 
-        </section>
+        <!-- header -->
+        <header id="header"></header>
 
-        <section id = "today">
-            <button id = todayLeft></button>
-            <div id = "dateBox">
-                <div class = "month">
-                    <p class = "month-font"><span id="today-m"></span></p>
+        <!-- wrap -->
+         <div class = "wrap">
+
+            <section id="m1-shellmenu">
+                <button class="menuOurShell"></button>
+                <button class="menuMyShell"></button> 
+            </section>
+
+            <section id = "m2-today">
+                <button class = todayLeft></button>
+                <div class = "dateBox">
+                    <div class = "month">
+                        <p class = "month-font"><span class="today-m"></span></p>
+                    </div>
+                    <div class= "day">
+                        <p class = "day-font">
+                            <span class="today-day"></span>
+                            <br>
+                            <span class="today-date"></span>
+                        </p>
+                    </div>
                 </div>
-                <div class= "day">
-                    <p class = "day-font">
-                        <span id="today-day"></span>
-                        <br>
-                        <span id="today-date"></span>
-                    </p>
+            <button class="todayRight"></button>
+            </section>
+
+            <section id = "m3-friends">
+                <div class = "findFriend">
+                    <button class = "findFriendButton">🔎 모든 친구</button>
                 </div>
-            </div>
-        <button id="todayRight">►</button>
-        </section>
+                <ul class = "friendList">
+                    <li class="fr01"><img src="./images/main/profile.png"><p>name</p></li>
+                    <li class="fr02"><img src="./images/main/profile.png"><p>name</p></li>
+                    <li class="fr03"><img src="./images/main/profile.png"><p>name</p></li>
+                    <li class="fr04"><img src="./images/main/profile.png"><p>name</p></li>
+                    <li class="fr05"><img src="./images/main/profile.png"><p>name</p></li>
+                    <div>     
+            </section>
 
-        <section id = "friends">
-            <div id = "findFriend"></div>
-            <ul id = "friendList">
-                    <li id="fr01"></li>
-                    <li id="fr02"></li>
-                    <li id="fr03"></li>
-                    <li id="fr04"></li>
-            </ul>
-        </section>
+            <section id = m4-friendSchedule>
+                <div class = friendScheduleList>
+                    <ul class = "friendScheduleList">
+                        <li class="fs1">
+                            <div class = "profile-x">
+                                <img src="./images/main/profile.png"><p>연주</p>
+                            </div>
+                            <div class = "scheduleContents">
+                                <ul>
+                                    <li>
+                                        <div class="content">
+                                        <p>☑︎ 소금빵 사러가기</p> 
+                                        </div>
+                                        <div class="tag">
+                                            <button>@나</button>
+                                            <button>@채원</button>
+                                            <button>@도원</button>
+                                        </div>
+                                    </li>
+                                    <li><p>☑︎ 마라탕 먹으러가기</p>  <div class="tag"><button>@나</button></li>
+                                    <li><p>☑︎ http 강의듣기</p>  <div class="tag"><button>@나</button></li>
+                                </ul>
+                            </div>
+                        </li>
 
-        <section>
-            친구들의 일정들~~
-        </section>
+                        <li class="fs2">
+                            <div class = "profile-x">
+                                <img src="./images/main/profile.png"><p>name</p>
+                            </div>
+                            <div class = "scheduleContents">
+                                <ul>
+                                    <li>☑︎ 소금빵 사러가기 </li>
+                                    <li>☑︎ 마라탕 먹으러가기 </li>
+                                    <li>☑︎ http 강의듣기 </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fs3"></li>
+                        <li class="fs4"></li>
+                    </ul>
+                </div>
+            </section>
 
 
-   </div>
+    </div> <!-- /wrap -->
+
+      <!-- footer -->
+      <footer></footer>
+
     <script src="./js/yeonding-main.js"></script>
 
 </body>
