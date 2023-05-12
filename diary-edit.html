@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/import.css" type="text/css" rel="stylesheet">
+    <link href="./css/diary-edit.css" type="text/css" rel="stylesheet">
+    <script src="./js/header.js"></script>
+    <script src="./js/confirm-modal.js"></script>
+    <title>Sample</title>
+</head>
+
+<body>
+    <!-- header -------------------------------->
+    <header id="header"></header>
+
+    <!-- wrap ---------------------------------->
+    <div class="wrap">
+
+        <!-- 달력 ------------------------------->
+        <section>
+            <div class="diary-calendar">달력</div>
+        </section>
+        <!-- 달력 ------------------------------->
+
+        <!-- 본문 ------------------------------->
+        <section class="diary-detail">
+            <div class="diary-detail-p">
+                <p>
+                    이것만 하고 자야지...
+                    월요일에 봐요...
+                </p>
+            </div>
+            <div class="btns">
+                <input type="button" value="🔒">
+                <input type="button" value="📷">
+            </div>
+        </section>
+        <!-- 본문 ------------------------------->
+
+        <!-- 보안, 삭제, 등록 ------------------------------->
+        <section id="d1">
+            <div class="diary-btns">
+                <select>
+                    <option value="option1">전체공개</option>
+                    <option value="option2">친구공개</option>
+                    <option value="option3">그룹공개</option>
+                </select>
+                <input class="del-btn" type="button" value="삭제">
+                <input class="add-btn" type="button" value="등록">
+            </div>
+        </section>
+        <!-- alert창 ------------------------------->
+        
+        <div id="confirm-modal" class="modal">
+            <div class="modal-content">
+                <p>🫧 Message</p>
+                <p>다이어리 등록이 완료되었습니다.</p>
+                <button class="confirm-yes">확인</button>
+            </div>
+        </div>
+
+        <!-- alert창 ------------------------------->
+
+    </div>
+    <!-- /wrap ------------------------------->
+
+    <!-- footer ------------------------------->
+    <footer></footer>
+</body>
+
+</html>
