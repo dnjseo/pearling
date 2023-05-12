@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
     let confirmModal = document.getElementById("confirm-modal");
     let confirmYes = confirmModal.querySelector(".confirm-yes");
 
-    section.addEventListener("click", function () {
+    addBtn.addEventListener("click", function () {
         confirmModal.style.display = "block";
     });
 

@@ -56,15 +56,16 @@ body {
     color: #908e8e;
 }
 
-.diary-add-btn {
+.diary-list > .add-btn {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-top: 100px;
 }
 
-.diary-add-btn > input {
+.add-btn > button {
     background: rgba(185, 185, 185, 0.2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+    border: none;
 }

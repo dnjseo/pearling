@@ -8,6 +8,7 @@
     <link href="./css/import.css" type="text/css" rel="stylesheet">
     <link href="./css/diary.css" type="text/css" rel="stylesheet">
     <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
     <title>diary</title>
 </head>
 
@@ -19,9 +20,15 @@
     <div class="wrap">
         <section>
             <h1 class="d-none">다이어리 전체 조회</h1>
+
+            <!----------------------- 달력 --------------------->
             <div class="diary-calendar">
                 달력
             </div>
+            <!----------------------- 달력 --------------------->
+
+            <!----------------------- 다이어리 내용 --------------------->
+
             <div class="diary-list">
                 <form>
                     <ul>
@@ -31,17 +38,21 @@
                         <div>2023/05/10</div>
                     </ul>
                 </form>
-                <div class="diary-add-btn">
-                    <input type="button" value="추가">
-                </div>
 
+                <!----------------------- 다이어리 내용 --------------------->
+
+                <div class="add-btn">
+                    <button><a href="/diary-edit.html">추가</a></button>
+                </div>
             </div>
         </section>
     </div>
     <!-- /wrap -->
 
+
     <!-- footer -->
-    <footer></footer>
+    <!-- <footer id="footer_list"></footer> -->
+    <footer id="footer"></footer>
 </body>
 
 </html>

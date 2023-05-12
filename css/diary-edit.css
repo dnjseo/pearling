@@ -57,7 +57,7 @@ body {
     /* border-radius: 12px; */
 }
 
-.btns>input {
+.btns>button {
     border: none;
 }
 
@@ -68,11 +68,11 @@ body {
     justify-content: end;
 }
 
-.diary-btns input {
+.diary-btns button {
     margin-left: 5px;
 }
 
-.diary-btns>input:active {
+.diary-btns>button:active {
     background: rgba(90, 46, 149, 0.2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -86,7 +86,7 @@ body {
     border-radius: 8px;
 }
 
-.diary-btns>input {
+.diary-btns>button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
