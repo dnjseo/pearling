@@ -1,0 +1,122 @@
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+       
+    text-align: center;
+
+    color: #797979;
+
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+.following-follower{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.following-selection{
+    width: 380px;
+    height: 47px;
+
+ 
+    background: rgba(165, 135, 224, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    margin: 22px;
+}
+
+.following{
+    color:#A587E0;
+}
+
+div>ul{
+    list-style: none;
+}
+
+.following-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+
+div>ul>li{
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    place-items: center end;
+    margin-bottom: 25px;
+}
+
+.following-statement{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    
+    width: 84px;
+    height: 22px;
+    
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+   
+}
+
+.following-statement:active{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+
+    width: 84px;
+    height: 22px;
+
+    background: rgba(165, 135, 224, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+   
+}
