@@ -1,0 +1,126 @@
+body{
+    background-color: rgba(0, 0, 0, 0.04);
+    position: relative;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+       
+    text-align: center;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.qa-list.wrap{
+    padding: 50px;
+}
+
+.qa-list-head,
+.qa-list-body .item {
+    text-align: center;
+    padding: 10px;
+    font-size: 0;
+}
+
+.qa-list-head {
+    border-top: 2px solid #615E5E;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.qa-list-body .item {
+    border-bottom: 1px solid #ccc;
+}
+
+.qa-list-head > div
+{
+    text-align: center;
+    font-size: 14px;
+}
+.qa-list-body .item > div {
+    display: inline-block;
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.qa-list-head > div {
+    font-weight: 600;
+}
+
+.qa-list .num {
+    width: 15%;
+    padding-left: 12px;
+}
+
+.qa-list .answer {
+    width: 20%;
+    padding-right: 12px;
+}
+
+.qa-list-body div.answer {
+    text-align: center;
+}
+
+.qa-list .title {
+    width: 20%;
+    padding-left: 24px;
+    text-align: left;
+}
+
+.qa-list-body div.title a:hover {
+    text-decoration: underline;
+}
+
+.qa-list .secret {
+    background: url("../images/key.png");
+    width: 12px;
+    height: 13px;
+}
+
+.qa-list .date {
+    width:25%;
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+.write-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+
+    width: 55px;
+    height: 25px;
+
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    
+
+
+    background: #615E5E;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 55px #FFFFFF, inset 0px 32px 16px rgba(199, 192, 196, 0.09), inset 0px 16px 8px rgba(199, 192, 196, 0.09), inset 0px -79px 40px rgba(199, 192, 196, 0.1), inset 0px -36px 30px rgba(199, 192, 196, 0.15), inset 0px -23px 25px rgba(199, 192, 196, 0.17);
+    border-radius: 10px;
+    transform: rotate(0.28deg);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
