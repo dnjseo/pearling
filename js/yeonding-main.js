@@ -1,4 +1,8 @@
+
+/* ===================== 오늘 날짜 달력 섹션 ===================== */
+
 let todayIndex = 0;
+const todaySection = document.querySelector("#m2-today");
 
 window.addEventListener("DOMContentLoaded", function() {
   updateDate(todayIndex); // 현재 날짜로 업데이트
@@ -38,18 +42,18 @@ function updateDate(offset) {
         case 5 : day = "fri"; break;
         case 6 : day = "sat"; break;
     }
-
-    document.querySelector('#today-m').innerText = month;
-    document.querySelector('#today-day').innerText = day;
-    document.querySelector('#today-date').innerText = date;
+    
+    todaySection.querySelector('.today-m').innerText = month;
+    todaySection.querySelector('.today-day').innerText = day;
+    todaySection.querySelector('.today-date').innerText = date;
 }
 
-document.getElementById("todayLeft").addEventListener("click", function() {
+todaySection.querySelector(".todayLeft").addEventListener("click", function() {
     todayIndex--; // 어제 날짜로 업데이트
     updateDate(todayIndex);
   });
   
-document.getElementById("todayRight").addEventListener("click", function() {
+todaySection.querySelector(".todayRight").addEventListener("click", function() {
     todayIndex++; // 내일 날짜로 업데이트
     updateDate(todayIndex);
   });
