@@ -9,6 +9,8 @@
     <link href="/css/diary/diary.css" type="text/css" rel="stylesheet">
     <script src="/js/header/header.js"></script>
     <script src="/js/footer/footer.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
+    <script src="/js/diary/diary.js"></script>\
     <title>diary</title>
 </head>
 
@@ -21,10 +23,34 @@
         <section>
             <h1 class="d-none">다이어리 전체 조회</h1>
 
+            <!-- 셸 메뉴 -->
+            <section id="ms1">
+                <div class="our-shell">
+                    <a href="/html/shell/main-ourshell.html">
+                        <!-- <img src="images/main/s1/clamOpen.png"> -->
+                        <p>our shell</p>
+                    </a>
+                </div>
+                |
+                <div class="my-shell"> 
+                    <a href="/html/shell/main-myshell.html">
+                        <!-- <img src="images/main/s1/clamClose.png"> -->
+                        <p>my shell</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 마이셸 내부 메뉴 -->
+            <section id = ms2>
+                <a class = monthly href="/html/shell/main-myshell.html">🌙 먼슬리 ></a>
+                <a class = ms2menu href="/html/diary/diary.html">📓 다이어리 ></a>
+                <a class = ms2menu href="/html/guestbook/guestbook.html">🫧 방명록 ></a>
+            </section>
+
             <!----------------------- 달력 --------------------->
-            <div class="diary-calendar">
-                달력
-            </div>
+            <section id = d2>
+                <div id='calendar'></div>
+            </section>
             <!----------------------- 달력 --------------------->
 
             <!----------------------- 다이어리 내용 --------------------->

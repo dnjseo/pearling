@@ -1,9 +1,26 @@
-    @font-face {
+/* 기본폰트 */
+
+@font-face {
         font-family: 'Pretendard-Regular';
         src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
         font-weight: 400;
         font-style: normal;
     }
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}    
+
+
+/* 메뉴용 폰트 */
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}   
 
 /* 오늘 달력용 폰트 */
     @font-face {
@@ -20,9 +37,8 @@
         flex-direction: column;
         align-items: center;
        
-        padding-top: 20px;
+        padding-top: 10px;
         gap: 10px;
-
 
         background: linear-gradient(0deg,
         rgba(0, 0, 0, 0.04), 
@@ -32,6 +48,11 @@
     }
 
 
+   
+ 
+
+
+
 /* ===================== 쉘 메뉴 선택 섹션 ===================== */
 
     #m1-shellmenu{
@@ -39,24 +60,23 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 15%;
         
         width: 90%;
-        height: 85px;
+        height: 50px;
         
         background: rgba(255, 255, 255, 0.7);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 30px;
-                
+        
         flex: none;
         order: 1;
         flex-grow: 0;
+        
+        color: rgba(199, 192, 196, 1);
     }
 
         #m1-shellmenu > .menuOurShell{
-            border: none;
-            background: url(../images/main/ourSellOpen.png) no-repeat -1px;
-
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -72,10 +92,24 @@
             flex-grow: 0;
         }
 
-        #m1-shellmenu > .menuMyShell{
-            border: none;
-            background: url(../images/main/ourSellOpen.png) no-repeat -1px;
+        #m1-shellmenu > .our-shell > a{
+            width: 100px;
+        }
 
+        #m1-shellmenu > .our-shell > a > img{
+            width: 50px;
+        }
+
+        #m1-shellmenu > .our-shell > a > p{
+            font-family: 'Pretendard-SemiBold';
+            font-size: 14px;
+            color : rgba(165, 135, 224, 1);
+            letter-spacing: 0.02em;
+        }
+
+
+
+        #m1-shellmenu > .menuMyShell{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -94,8 +128,22 @@
         }
 
 
+        #m1-shellmenu > .my-shell > a > img{
+            width: 50px;
+        }
+        
+        #m1-shellmenu > .my-shell > a > p{
+            font-family: 'Pretendard-SemiBold';
+            font-size: 14px;
+            color: #797979;
+            letter-spacing: 0.02em;
+        }
+
+
+
 /* ===================== 오늘 날짜 달력 섹션 ===================== */
     #m2-today{
+        padding-top: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -114,7 +162,7 @@
     }
 
         #m2-today > .todayLeft{
-            background: url(../images/main/buttonTodayLeft.png) no-repeat 5px;
+            background: url(/images/main/s2/buttonTodayLeft.png) no-repeat 5px;
             border: none;
             height: 30px;
             width:  30px;
@@ -126,7 +174,7 @@
         }
 
         #m2-today > .todayRight{
-            background: url(../images/main/buttonTodayRight.png);
+            background: url(/images/main/s2/buttonTodayRight.png);
             border: none;
             height: 30px;
             width:  30px;
@@ -251,7 +299,7 @@
         align-items: flex-start;    
         gap: 10px;        
         width: 90%;
-        height: 210px;
+        height: 170px;
         
         
         /* Inside auto layout */
@@ -263,7 +311,6 @@
 
         /* 친구 찾기 돋보기 */
         .findFreind {
-           
             display: grid;
             grid-template-columns: 100px 100px 100px;
             /* Inside auto layout */
@@ -327,8 +374,9 @@
         .friendList > li {
             display: flex;
             flex-direction: column;
-            width: 90px;
-            height: 90px;
+            justify-content: center;
+
+            width: 100%;
             padding: 15px;
         }
 
@@ -364,7 +412,7 @@
 
         width: 90% ;
 
-        padding-bottom: 50px;
+        padding-bottom: 20px;
 
         /* Inside auto layout */
         flex: none;

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/import.css" type="text/css" rel="stylesheet" >
+    <link href="/css/shell/myshell.css" type="text/css" rel="stylesheet" >
+    <script src="/js/header/header.js"></script>
+    <script src="/js/footer/footer.js"></script>
+    <script src="/js/footer/footer_list.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
+    <script src="/js/main/myshell.js"></script>
+    <title>my shell</title>
+</head>
+<body>
+    <!-- header -->
+    <header id="header"></header>
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <section id="ms1">
+            <div class="our-shell">
+                <a href="/html/shell/main-ourshell.html">
+                    <!-- <img src="images/main/s1/clamOpen.png"> -->
+                    <p>our shell</p>
+                </a>
+            </div>
+            |
+            <div class="my-shell"> 
+                <a href="/html/shell/main-myshell.html">
+                    <!-- <img src="images/main/s1/clamClose.png"> -->
+                    <p>my shell</p>
+                </a>
+            </div>
+        </section>
+
+        <section id = ms2>
+            <a class = monthly href="/html/shell/main-myshell.html">🌙 먼슬리 ></a>
+            <a class = ms2menu href="/html/diary/diary.html">📓 다이어리 ></a>
+            <a class = ms2menu href="/html/guestbook/guestbook.html">🫧 방명록 ></a>
+        </section>
+
+        <section id = ms3>
+            <div id='calendar'></div>
+        </section>
+
+        <section id = ms4>
+            <div class = "today">오늘 날짜
+
+            </div>
+
+            <div class="todo">
+                to do.
+                <ul>
+                    <li>
+                        <div class="content">
+                            <p>☑︎ 소금빵 사러가기</p> 
+                        </div>
+                        <div class="tag">
+                            <button>@나</button>
+                            <button>@채원</button>
+                            <button>@도원</button>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="schedule">
+                일정.
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="dayDetail" class="ms-hidden">
+            <div class="modal-content">
+                <button class="closeButton">닫기</button>
+                <!-- 섹션 내용 -->
+            </div>
+          </section>
+
+        
+    </div>
+    <!-- /wrap -->
+
+    <!-- footer -->
+    <footer id="footer_list"></footer>
+    <footer id="footer"></footer>
+
+</body>
+</html>

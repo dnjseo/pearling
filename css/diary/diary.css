@@ -69,3 +69,21 @@ body {
     border-radius: 30px;
     border: none;
 }
+
+/* ==========캘린더 조종 ===================== */
+
+:root{
+    --fc-border-color: none;
+}
+
+.fc{
+    flex-direction: row;
+}
+.fc-toolbar-chunk{
+    font-size: 12px;
+}
+
+.fc-toolbar-chunk > .fc-toolbar-title{
+    font-family: 'Pretendard-SemiBold';
+    font-size: 12px;
+}
