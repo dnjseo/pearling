@@ -8,8 +8,9 @@
     <link href="/css/guestbook/guestbook.css" type="text/css" rel="stylesheet" >
     <script src="/js/guestbook.js"></script>
     <script src="/js/header/header.js"></script>
+    <script src="/js/guestbook-modal.js"></script>
     <script src="/js/footer/footer.js"></script>
-    <title>방명록(친구버전)</title>
+    <title>방명록(내버전)</title>
 </head>
 <body>
     <header id="header"></header>
@@ -37,14 +38,27 @@
                 <div class="pearl">
                     <p>나 오늘 마라탕 먹으러 감 ㅋ</p>
                 </div>
-                <p class="date">2023/12/21</p>
+                <div class="underline">
+                    <p class="date">2023/12/21</p>
+                    <p class="add-delete">삭제</p>
+                </div>
             </div>
             <p class="close">x</p>
         </section>
 
+        <!-- 뒤에 배경 어둡게 하기 -->
         <div class="black"></div>
 
-        <div class="plus"><a href="./guestbook-plus.html">+</a></div>
+        <!-- alert창 ------------------------------->
+        <div id="confirm-modal" class="modal">
+            <div class="modal-content">
+                <p>🫧 Message</p>
+                <p>방명록 삭제가 완료되었습니다.</p>
+                <button class="confirm-yes">확인</button>
+            </div>
+        </div>
+        <!-- alert창 ------------------------------->
+
     </div>
 
     <footer id="footer"></footer>
