@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
+    font-size: 12px;
+    color: #615E5E;
+}
+
+.wrap {
+    padding: 0 12px;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.pwd-change-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.pwd-change-box>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pwd-change-box>div>label {
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.pwd-change-box>div>input {
+    align-self: center;
+    justify-self: center;
+    /* text-align:left; */
+
+    width: 90%;
+    height: 37px;
+    /* left: 10px;
+    top: 10px; */
+
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+}
+
+.add-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.add-btn>button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+}
+
+.add-btn>button:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+}
