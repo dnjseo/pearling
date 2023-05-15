@@ -1,0 +1,163 @@
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+        
+    color: #797979;
+}
+
+.search-wrap{
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    padding: 7px 20px;
+    gap: 14px;
+
+    width: 90%;
+    height: 36px;
+    margin: auto;
+
+    background: #FFFFFF;
+    border: 1.5px solid rgba(217, 217, 217, 0.5);
+    border-radius: 15px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    margin-bottom: 20px;
+    
+}
+
+.icon{
+    background: url(/images/search/search-icon.png);
+    width: 24px;
+    height: 25px;
+     
+}
+
+.field{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #D9D9D9;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.detail-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+
+    width: 90%;
+    height: 422px;
+
+    background: #FFFFFF;
+    /* REAL 그림자 */
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    margin: auto;
+}
+
+#click-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 140px;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.account-click{
+    border: none;
+    background: url(/images/search/account-color.png) no-repeat -1px;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px 0px;
+    gap: 10px;
+
+    width: 56px;
+    height: 74px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.myshell-click{
+    border: none;
+    background: url(/images/search/my-shell.png) no-repeat -1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px 0px;
+    gap: 10px;
+    
+    width: 51px;
+    height: 73px;
+      
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.account-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-box{
+    display: grid;
+    grid-template-columns: 1.4fr 2fr 4fr;
+    place-items: center left;
+    margin-bottom: 25px;
+}
+

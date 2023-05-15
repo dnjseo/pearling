@@ -1,0 +1,155 @@
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
+    font-size: 12px;
+    color: #615E5E;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.search-wrap{
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    padding: 7px 20px;
+    gap: 14px;
+
+    width: 90%;
+    height: 36px;
+    margin: auto;
+
+    background: #FFFFFF;
+    border: 1.5px solid rgba(217, 217, 217, 0.5);
+    border-radius: 15px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.icon{
+    background: url(/images/search/search-icon.png);
+    width: 24px;
+    height: 25px;
+}
+
+.dropdown-btn{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #D9D9D9;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    /* order: 1; */
+    flex-grow: 0;
+
+    border: none;
+
+    background-color: none;
+}
+
+.dropdown-submenu{
+
+    width: 90%;
+    background: #FFFFFF;
+    border: 1.5px solid rgba(217, 217, 217, 0.5);
+    border-radius: 15px;
+    margin: auto;
+   
+    /* display: none; */
+  
+}
+.menu1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px; 
+
+}
+
+.menu1 > :first-child {
+    justify-self: start;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    
+    color: #797979;
+}
+
+.menu1 > :last-child {
+    justify-self: end;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 8px;
+    line-height: 24px;
+    
+    color: #000000;
+
+}
+
+.menu1-detail{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.search-items{
+    display: grid;
+    grid-template-columns: 0.2fr 4fr 0.5fr;
+    margin-bottom: 10px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 520;
+    font-size: 10px;
+    line-height: 18px;
+    
+    color: #000000;
+}
+
+
+.search-items p:first-child {
+    background: url(/images/search/search-icon.png);
+    width: 24px;
+    height: 25px;
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.search-items p:nth-child(2) {
+    justify-self: start;
+}
+
+.search-items p:last-child {
+    background: url(/images/search/x.png);
+    width: 17px;
+    height: 17px;
+    justify-self: end;
+}
+
