@@ -23,22 +23,23 @@
         <section id="ms1">
             <div class="our-shell">
                 <a href="/html/shell/main-ourshell.html">
-                    <img src="images/main/s1/clamOpen.png">
+                    <!-- <img src="images/main/s1/clamOpen.png"> -->
                     <p>our shell</p>
                 </a>
             </div>
+            |
             <div class="my-shell"> 
                 <a href="/html/shell/main-myshell.html">
-                    <img src="images/main/s1/clamClose.png">
+                    <!-- <img src="images/main/s1/clamClose.png"> -->
                     <p>my shell</p>
                 </a>
             </div>
         </section>
 
         <section id = ms2>
-            <a href="/html/guestbook/guestbook.html">
-                방명록으로 넘어가는 버튼이다
-            </a>
+            <a class = monthly href="/html/shell/main-myshell.html">🌙 먼슬리 ></a>
+            <a class = ms2menu href="/html/diary/diary.html">📓 다이어리 ></a>
+            <a class = ms2menu href="/html/guestbook/guestbook.html">🫧 방명록 ></a>
         </section>
 
         <section id = ms3>
@@ -46,8 +47,12 @@
         </section>
 
         <section id = ms4>
-            <div>오늘 날짜</div>
-            <div>to do.
+            <div class = "today">오늘 날짜
+
+            </div>
+
+            <div class="todo">
+                to do.
                 <ul>
                     <li>
                         <div class="content">
@@ -63,7 +68,8 @@
                     <li></li>
                 </ul>
             </div>
-            <div>일정.
+            <div class="schedule">
+                일정.
                 <ul>
                     <li></li>
                     <li></li>
@@ -71,6 +77,13 @@
                 </ul>
             </div>
         </section>
+
+        <section id="dayDetail" class="ms-hidden">
+            <div class="modal-content">
+                <button class="closeButton">닫기</button>
+                <!-- 섹션 내용 -->
+            </div>
+          </section>
 
         
     </div>
