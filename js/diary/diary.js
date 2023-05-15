@@ -6,6 +6,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     calendar.render();
-    calendar.setOption('contentHeight', 350);
-        
+    calendar.setOption('contentHeight', 150);        
     });
