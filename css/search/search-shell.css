@@ -75,8 +75,8 @@ body{
     gap: 30px;
 
     width: 90%;
-    height: 422px;
-
+    height: 100%;
+ 
     background: #FFFFFF;
     /* REAL 그림자 */
 
@@ -147,3 +147,118 @@ body{
     order: 1;
     flex-grow: 0;
 }
+
+.myshell-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.todo-list{
+    background: url(/images/search/todo.png);
+    width: 298px;
+    height: 23px;
+    margin-bottom: 15px;
+
+}
+
+.lists{
+    margin-bottom: 35px;
+}
+
+.todo-statement{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    place-items: center;
+}
+
+.todo-statement p:first-child {
+    justify-self: center;
+}
+
+.todo-statement p:nth-child(2) {
+    justify-self: start;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+      
+}
+
+.todo-statement p:last-child {
+    justify-self: start;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    
+}
+
+.todo-content{
+    margin: 12px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 515;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+
+    color: #615E5E;
+}
+
+.schedule-list{
+    background: url(/images/search/schedule.png);
+    width: 298px;
+    height: 23px;
+    margin-bottom: 15px;
+}
+
+.schedule-statement{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    place-items: center;
+}
+
+.schedule-statement p:first-child {
+    justify-self: center;
+}
+
+.schedule-statement p:nth-child(2) {
+    justify-self: start;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+      
+}
+
+.schedule-statement p:last-child {
+    justify-self: start;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    
+}
+
+.schedule-content{
+    margin: 12px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 515;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+
+    color: #615E5E;
+}
+
+.schedule-box>content>p{
+    margin-bottom: 12px;
+}
+
+
