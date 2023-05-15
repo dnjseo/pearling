@@ -95,7 +95,6 @@
     }
 
 
-
     #ms1 > .menuMyShell{
         display: flex;
         flex-direction: column;
@@ -126,9 +125,9 @@
         letter-spacing: 0.02em;
     }
 
-/* ==============(ms2) 방명록 버튼 섹션 ===================== */
+/* ==============(ms2) 마이셸 하부 메뉴 섹션 ===================== */
 #ms2{
-    font-size: 14px;
+    font-size: 12px;
 
     display: flex;
     flex-direction: row;

@@ -4,6 +4,130 @@ body {
     color: #615E5E;
 }
 
+
+
+/* ========쉘 메뉴 ===================== */
+#ms1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    
+    width: 100%;
+    height: 50px;
+    
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    color: rgba(199, 192, 196, 1);
+}
+
+    #ms1 > .menuOurShell{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 165px;
+        height: 106px;
+
+        border-radius: 20px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    #ms1 > .our-shell > a{
+        width: 100px;
+    }
+
+    #ms1 > .our-shell > a > img{
+        width: 50px;
+    }
+
+    #ms1 > .our-shell > a > p{
+        font-family: 'Pretendard-SemiBold';
+        font-size: 14px;
+        color : #797979;
+        letter-spacing: 0.02em;
+    }
+
+
+    #ms1 > .menuMyShell{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 165px;
+        height: 106px;
+
+        border-radius: 20px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+
+    #ms1 > .my-shell > a > img{
+        width: 50px;
+    }
+    
+    #ms1 > .my-shell > a > p{
+        font-family: 'Pretendard-SemiBold';
+        font-size: 14px;
+        color : rgba(165, 135, 224, 1);
+        letter-spacing: 0.02em;
+    }
+
+
+/* =========마이셸 하부 메뉴======================= */
+
+#ms2{
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    letter-spacing: 0.02em;
+
+    padding: 15px;
+}
+
+
+#ms2 > .ms2diary {
+    font-family: 'Pretendard-SemiBold';
+    color : rgba(165, 135, 224, 1);
+}
+
+
+#ms2 > .ms2menu {
+    font-family: 'Pretendard-Regular';
+    color: #797979
+}
+
+/* =========마이쉘 하부 메뉴 (end)======================= */
+
+
 .diary-calendar {
     /* Auto layout */
 
@@ -70,14 +194,33 @@ body {
     border: none;
 }
 
+
+
 /* ==========캘린더 조종 ===================== */
+
+#calendar {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 :root{
     --fc-border-color: none;
+
+
+        /* 캘린더 버튼 */
+        --fc-button-text-color:rgba(165, 135, 224, 1);
+        --fc-button-bg-color: none;
+        --fc-button-border-color: none;
+        --fc-button-hover-bg-color: none;
+        --fc-button-hover-border-color: #1a252f;
+        --fc-button-active-bg-color: #1a252f;
+        --fc-button-active-border-color: #151e27;
 }
 
 .fc{
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
 }
 .fc-toolbar-chunk{
     font-size: 12px;
@@ -86,4 +229,14 @@ body {
 .fc-toolbar-chunk > .fc-toolbar-title{
     font-family: 'Pretendard-SemiBold';
     font-size: 12px;
+}
+
+
+.fc-scrollgrid-sync-table{
+    height: 100px;
+}
+
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
+    min-height: 0px;
+    min-width: 0px;
 }

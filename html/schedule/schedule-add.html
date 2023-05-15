@@ -5,55 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/import.css" type="text/css" rel="stylesheet">
     <link href="/css/schedule/schdule-add.css" type="text/css" rel="stylesheet">
+    <!-- <script src="/js/header/header.js"></script> -->
+    <script src="/js/schedule-add.js"></script>
+    <script src="/js/confirm-modal.js"></script>
     <title>schedule-add</title>
 </head>
 
 <body>
-    <div id="schedule-add-wrap" class="schedule-add-wrap">
-        <section>
-            <h1>일정 추가</h1>
-            <div id="schdule-add-title" class="schdule-add-title">
-                <form>
-                    <label for="schedule-title">일정 제목</label>
-                    <input type="text" id="schedule-title" name="schedule-title">
-                    <input type="submit" value="확인">
-                </form>
+    <div id="wrap" class="schedule-add-wrap">
+        <h1 class="d-none">일정 추가</h1>
+        <section id="d1">
+            <h1 class="d-none">내용</h1>
+            <div class="schdule-add-title">
+                <label for="schedule-title">일정 제목</label>
+                <input type="text" id="schedule-title" name="schedule-title">
+                <!-- <input type="submit" value="확인"> -->
             </div>
-            <!-- ------------------------------------------------------------------------------------------------------------------ -->
-            <div id="schedule-add-date" class="schedule-add-date">
-                <form>
+            <!-- 날짜 선택 ------------------------------------------------------------------------------------------------------------------ -->
+
+            <div class="schedule-add-date">
+                <div>
                     <label for="start-date">시작일:</label>
                     <input type="date" id="start-date" name="start-date" value="2023-05-09" min="2000-01-01"
                         max="2099-12-31">
-                    </br>
+                </div>
+                <div>
                     <label for="end-date">종료일:</label>
                     <input type="date" id="end-date" name="end-date" value="2023-05-09" min="2000-01-01"
                         max="2099-12-31">
-                </form>
-            </div>
-            <div id="schedule-add-location" class="schedule-add-location">
-                <form>
-                    <label for="location-add">장소 추가</label>
-                    <input type="button" id="location-add" name="location-add">
-                </form>
-            </div>
-            <div id="schedule-add-freind-wrap" class="schedule-add-freind-wrap">
-                <div>
-                    <label for="freind-tag">친구 태그</label>
-                    <input type="button" id="freind-tag" name="freind-tag">
                 </div>
             </div>
-            <div id="schedule-add-color-wrap" class="schedule-add-color-wrap">
-                <div>
-                    <label for="color-tag">컬러 팔레트</label>
-                    <input type="button" id="color-tag" name="color-tag">
-                </div>
+
+            <!-- 장소 선택 ------------------------------------------ -->
+            <div class="schedule-add-location">
+                <label for="location-add">장소 추가</label>
+                <button>카카오맵 추가</button>
             </div>
-            <div id="schedule-add-submit" class="schedule-add-submit">
-                <input type="submit" value="취소">
-                <input type="submit" value="확인">
+
+            <!-- 친구 태그 선택 ------------------------------------------ -->
+
+            <div class="schedule-add-freind-wrap">
+                <label for="freind-tag">친구 태그</label>
+                <input type="text" value="입력하세요.">
             </div>
+            <div class="schedule-add-freind-box">
+            <ul class="friendList">
+                <li class="fr"><img src="/images/profile/profile_yr.png">
+                    <p>탐정</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_d.png">
+                    <p>감자</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_c.png">
+                    <p>진미채</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_yj.png">
+                    <p>name</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_yj.png">
+                    <p>name</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_yj.png">
+                    <p>name</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_yj.png">
+                    <p>name</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_yj.png">
+                    <p>name</p>
+                </li>
+                <li class="fr"><img src="/images/profile/profile_yj.png">
+                    <p>name</p>
+                </li>
+                </ul>
+            </div>
+
+                    <!-- 컬러팔레트 선택 ------------------------------------------ -->
+
+                    <div class="schedule-add-color-wrap">
+                        <label for="color-tag">컬러 팔레트</label>
+                        <div id="box" class="box">
+                            <div id="palletBox" class="pallet">
+                            </div>
+                        </div>
+                        <!-- <input type="button" id="color-tag" name="color-tag"> -->
+                    </div>
+
+                    <!-- 취소, 확인버튼 선택 ------------------------------------------ -->
+
+                    <div class="schedule-add-submit">
+                        <input type="submit" value="취소">
+                        <input class="add-btn" type="submit" value="확인">
+                    </div>
+
+                    <!-- 컨펌 모달 ------------------------------------------ -->
+
+                    <div id="confirm-modal" class="modal">
+                        <div class="modal-content">
+                            <p>🫧 Message</p>
+                            <p>일정이 등록되었습니다.</p>
+                            <button class="confirm-yes">확인</button>
+                        </div>
+                    </div>
         </section>
 
     </div>
