@@ -7,6 +7,14 @@ section,time,mark,audio,video{margin:0;padding:0;}
 
 article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display: block;}
 
+
+body{
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    color : #797979;
+    letter-spacing: 0.04em;
+}
+
 table{
     border-collapse:collapse;
 }
@@ -60,6 +68,8 @@ a{
     padding: 0 12px;
 }
 
+
+
 /* ==================== display ==================== */
 .d-none{
     display: none;
@@ -68,3 +78,36 @@ a{
 .d-inline-block{
     display: inline-block;
 }
+
+
+/* 기본폰트 */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}    
+
+
+/* 예시 
+#m1-shellmenu > .our-shell > a > p{
+    //폰트 굵기 (Regular은 보통)
+    font-family: 'Pretendard-SemiBold';
+
+    //폰트 사이즈
+    font-size: 14px;
+
+    
+    color : rgba(165, 135, 224, 1);
+    letter-spacing: 0.02em;
+} */
