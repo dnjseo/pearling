@@ -8,7 +8,6 @@
     <link href="/css/shell/myshell.css" type="text/css" rel="stylesheet" >
     <script src="/js/header/header.js"></script>
     <script src="/js/footer/footer.js"></script>
-    <script src="/js/footer/footer_list.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
     <script src="/js/main/myshell.js"></script>
     <title>my shell</title>
@@ -47,34 +46,76 @@
         </section>
 
         <section id = ms4>
-            <div class = "today">오늘 날짜
-
+            <div class = "today">
+                <img src="/images/profile/circle.png">
+                <span class="today-day"></span>
             </div>
+            
+                <div class="schedule">
+                    <p1>to do.</p1>
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <input type="checkbox">
+                                <p>소금빵 사러가기🥐</p> 
+                            </div>
+                            <div class="tag">
+                                <button>@채원</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <input type="checkbox">
+                                <p>마라탕 먹기</p> 
+                            </div>
+                            <div class="tag">
+                                <button>@도원</button>
+                                <button>@예린</button>
+                                <button>@채원</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <input type="checkbox">
+                                <p>http강의 듣기👩🏻‍💻</p> 
+                            </div>
+                            <div class="tag">
+                                <!-- <button></button> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="todo">
-                to do.
-                <ul>
-                    <li>
-                        <div class="content">
-                            <p>☑︎ 소금빵 사러가기</p> 
-                        </div>
-                        <div class="tag">
-                            <button>@나</button>
-                            <button>@채원</button>
-                            <button>@도원</button>
-                        </div>
-                    </li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="schedule">
-                일정.
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="schedule">
+                    <p><br><br></p>
+                    <p1>일정.</p1>
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <p>🎥 비색의 탄환 </p> 
+                            </div>
+                            <div class="tag">
+                                <button>@예린</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <p>🎂 누군가의 생일</p> 
+                            </div>
+                            <div class="tag">
+                                <!-- <button></button> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <p>📝 시험</p> 
+                            </div>
+                            <div class="tag">
+                                <!-- <button></button> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -82,7 +123,7 @@
             <div class="modal-content">
                 <button class="closeButton">닫기</button>
                 <!-- 섹션 내용 -->
-            </div>
+        </div>
           </section>
 
         
@@ -90,8 +131,8 @@
     <!-- /wrap -->
 
     <!-- footer -->
-    <footer id="footer_list"></footer>
-    <footer id="footer"></footer>
+    <!-- <footer id="footer_list"></footer> -->
+    <!-- <footer id="footer"></footer> -->
 
 </body>
 </html>

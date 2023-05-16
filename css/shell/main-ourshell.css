@@ -13,15 +13,6 @@
     font-style: normal;
 }    
 
-
-/* 메뉴용 폰트 */
-@font-face {
-    font-family: 'HS-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}   
-
 /* 오늘 달력용 폰트 */
     @font-face {
         font-family: 'ghanachoco';
@@ -46,10 +37,6 @@
 
 
     }
-
-
-   
- 
 
 
 

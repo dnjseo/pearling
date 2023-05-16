@@ -13,7 +13,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin:  20px;
+}
+
+.img-box > img {
+    width: 40px;
+    height: 40px;
 }
 
 .pwd-change-box {
@@ -37,7 +42,7 @@ body {
 .pwd-change-box>div>input {
     align-self: center;
     justify-self: center;
-    /* text-align:left; */
+    padding-left: 10px;
 
     width: 90%;
     height: 37px;
