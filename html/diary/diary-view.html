@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/import.css" type="text/css" rel="stylesheet">
+    <link href="/css/diary/diary-view.css" type="text/css" rel="stylesheet">
+    <script src="/js/header/header.js"></script>
+    <!-- <script src="/js/footer/footer.js"></script> -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
+    <script src="/js/diary/diary.js"></script>
+    <title>diary</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header"></header>
+
+    <!-- wrap -->
+    <div class="wrap">
+        <h1 class="d-none">다이어리 조회(친구 입장)</h1>
+        <section>
+            <h1 class="d-none">다이어리 목록</h1>
+
+            <!-- 셸 메뉴 -->
+            <!-- <section id="ms1">
+                <div class="our-shell">
+                    <a href="/html/shell/main-ourshell.html">
+                        <p>our shell</p>
+                    </a>
+                </div>
+                
+                <div class="my-shell"> 
+                    <a href="/html/shell/main-myshell.html">
+                        <p>my shell</p>
+                    </a>
+                </div>
+            </section> -->
+
+            <!-- 마이셸 내부 메뉴 -->
+            <!-- <section id = ms2>
+                <a class = ms2menu href="/html/shell/main-myshell.html">🌙 먼슬리 ></a>
+                <a class = ms2diary href="/html/diary/diary.html">📓 다이어리 ></a>
+                <a class = ms2menu href="/html/guestbook/guestbook.html">🫧 방명록 ></a>
+            </section> -->
+
+            <!----------------------- 달력 --------------------->
+            <section id=d2>
+                <div id='calendar'></div>
+            </section>
+            <!----------------------- 달력 --------------------->
+
+            <!----------------------- 다이어리 내용 --------------------->
+
+            <div class="diary-list">
+                <form>
+                    <ul>
+                        <li>나 지금 와이어프레임 짜다가 디자인을 하고 있어요</li>
+                        <div class="li-box">
+                            <div class="btn-box">
+                                <img class="defence" src="/images/diary/heart.png" alt="heart">
+                                <img class="defence" src="/images/diary/comment.png" alt="comment">
+                            </div>
+                            <p>2023/05/10</p>
+                        </div>
+                        <li>이것만 하고 자야지,, 월요일에 봐요,,</li>
+                        <div class="li-box">
+                            <div class="btn-box">
+                                <img class="defence" src="/images/diary/heart.png" alt="heart">
+                                <img class="defence" src="/images/diary/comment.png" alt="comment">
+                            </div>
+                            <p>2023/05/10</p>
+                        </div>
+                    </ul>
+                </form>
+
+                <!----------------------- 다이어리 내용 --------------------->
+
+                <!-- <div class="add-btn">
+                    <button><a href="/diary-edit.html">추가</a></button>
+                </div> -->
+            </div>
+        </section>
+    </div>
+
+    <!-- /wrap -->
+
+
+    <!-- footer -->
+    <!-- <footer id="footer_list"></footer> -->
+    <!-- <footer id="footer"></footer> -->
+</body>
+
+</html>
