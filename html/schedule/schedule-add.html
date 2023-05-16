@@ -7,14 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/import.css" type="text/css" rel="stylesheet">
     <link href="/css/schedule/schdule-add.css" type="text/css" rel="stylesheet">
-    <!-- <script src="/js/header/header.js"></script> -->
+    <script src="/js/header/header.js"></script>
     <script src="/js/schedule-add.js"></script>
     <script src="/js/confirm-modal.js"></script>
+    <!-- <script src="/js/footer/footer.js"></script> -->
     <title>schedule-add</title>
 </head>
 
 <body>
-    <div id="wrap" class="schedule-add-wrap">
+
+    <header>
+        <!--header-wrap-->
+        <div class="header-wrap">
+            <!--header-->
+            <div class="header">
+                <h1 class="back"><a><img src="/images/back.png" alt="logo"/></a></h1>
+                <h2 class="title">일정 추가</h2>
+            </div>  
+        <!-- header-->
+        </div>
+        <!--header-wrap-->
+    </header>
+
+    <div class="wrap">
         <h1 class="d-none">일정 추가</h1>
         <section id="d1">
             <h1 class="d-none">내용</h1>
@@ -28,12 +43,12 @@
             <div class="schedule-add-date">
                 <div>
                     <label for="start-date">시작일:</label>
-                    <input type="date" id="start-date" name="start-date" value="2023-05-09" min="2000-01-01"
+                    <input type="datetime-local" id="start-date" name="start-date" value="2023-05-09" min="2000-01-01"
                         max="2099-12-31">
                 </div>
                 <div>
                     <label for="end-date">종료일:</label>
-                    <input type="date" id="end-date" name="end-date" value="2023-05-09" min="2000-01-01"
+                    <input type="datetime-local" id="end-date" name="end-date" value="2023-05-09" min="2000-01-01"
                         max="2099-12-31">
                 </div>
             </div>
@@ -109,6 +124,8 @@
                             <button class="confirm-yes">확인</button>
                         </div>
                     </div>
+
+                    <!-- <footer id="footer"></footer> -->
         </section>
 
     </div>
