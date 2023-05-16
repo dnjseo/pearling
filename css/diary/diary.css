@@ -240,3 +240,12 @@ body {
     min-height: 0px;
     min-width: 0px;
 }
+
+.fc .fc-daygrid-day-number{
+    padding: 0px;
+}
+
+.fc .fc-daygrid-day-top {
+    display: flex;
+    flex-direction: column;
+}
