@@ -1,13 +1,5 @@
 body{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
-
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-        
-    color: #797979;
 }
 
 .search-wrap{
@@ -46,11 +38,8 @@ body{
 }
 
 .field{
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
-    line-height: 22px;
+    
     /* identical to box height */
 
     display: flex;

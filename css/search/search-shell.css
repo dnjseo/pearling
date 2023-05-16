@@ -1,13 +1,5 @@
 body{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
-
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-        
-    color: #797979;
 }
 
 .search-wrap{
@@ -46,9 +38,6 @@ body{
 }
 
 .field{
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     /* identical to box height */
@@ -178,19 +167,13 @@ body{
 
 .todo-statement p:nth-child(2) {
     justify-self: start;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
+    
       
 }
 
 .todo-statement p:last-child {
     justify-self: start;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
+    
     font-size: 8px;
     line-height: 10px;
     
@@ -198,11 +181,8 @@ body{
 
 .todo-content{
     margin: 12px;
-    font-family: 'Noto Sans';
-    font-style: normal;
+    
     font-weight: 515;
-    font-size: 12px;
-    line-height: 16px;
     letter-spacing: 0.15em;
 
     color: #615E5E;
@@ -227,19 +207,10 @@ body{
 
 .schedule-statement p:nth-child(2) {
     justify-self: start;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-      
 }
 
 .schedule-statement p:last-child {
     justify-self: start;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
     font-size: 8px;
     line-height: 10px;
     
@@ -247,17 +218,13 @@ body{
 
 .schedule-content{
     margin: 12px;
-    font-family: 'Noto Sans';
-    font-style: normal;
     font-weight: 515;
-    font-size: 12px;
-    line-height: 16px;
     letter-spacing: 0.15em;
-
     color: #615E5E;
 }
 
 .schedule-box>content>p{
+
     margin-bottom: 12px;
 }
 
