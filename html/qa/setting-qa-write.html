@@ -5,36 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qa_write</title>
+    <link href="/css/import.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="/css/qa/setting-qa-write.css">
+    
 </head>
 <body>
-    <div class="qa-wrap">
-        <div class="qa-write-wrap">
-            <div class="qa-write">
-                    <div class="title">
-                         <dl>
-                            <dt>문의 제목</dt>
-                            <dd><input type="text"></dd>
-                        </dl>
-                    </div>
-                    <div class="info">
-                        <dl>
-                            <dt>비밀번호</dt>
-                            <dd><input type="password"></dd>
-                        </dl>
-                    </div>
-                    <div class="context">
-                        <dl>
-                            <dt>문의 내용</dt>
-                            <dd><input type="qa-cnt"></dd>
-                        </dl>
-                    </div>
-               </div>
-                <div class="button-wrap">
-                        <a href="setting-qa.html" class="on">등록</a>
-                </div>
+    <!-- header -->
+    <header>
+        <!--header-wrap-->
+        <div class="header-wrap">
+            <!--header-->
+            <div class="header">
+                <h1 class="back"><a><img src="/images/back.png" alt="logo"/></a></h1>
+                <h2 class="title">문의하기</h2>
+            </div>  
+        <!-- header-->
+        </div>
+        <!--header-wrap-->
+    </header>
+
+    <!-- wrap -->
+    <div class="wrap">
+        <div clas="=tico">
+            <div class="qa-title">
+                <ul>
+                    <li>문의 제목</li>
+                    <li><input type="text"></li>
+                </ul>
+                <form class="qa-lock">
+                    <label for="checkbox">비밀글</label>
+                    <input type="checkbox" name="lock">
+                  </form>
+            </div>
+            <div class="qa-context">
+                <ul>
+                    <li>문의 내용</li>
+                    <li><input type="text"></li>
+                </ul>
             </div>
         </div>
+        <div class="write-btn">
+            <a href="#" class="defense">등록</a>
+        </div>
     </div>
+    <!-- /wrap -->
+
+    <!-- footer -->
+    <footer id="footer_list"></footer>
+    <footer id="footer"></footer>
 </body>
 </html>

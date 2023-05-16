@@ -1,45 +1,109 @@
-body{
-    background-color: rgba(0, 0, 0, 0.04);
-    position: relative;
+.wrap{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), 
+    rgba(0, 0, 0, 0.04)), #FFFFFF;
 
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 550;
-    font-size: 12px;
-    line-height: 16px;
-       
-    text-align: center;
-
-    color: #797979;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.a{
+    color: #A587E0;
 }
 
-.qa-write_wrap {
+.tico{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 20px;
+    align-items: start; 
+}
+
+li:first-child {
+    width: 0 0 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.qa-title {
+    display: flex;
+    align-items: center;
+}
+
+.qa-title ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 20px;
+    align-items: start;
+    flex: 1;
+}
+
+.qa-title .qa-lock {
+    display: flex;
+    align-items: center;
+}
+
+li:last-child{
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
+    
+}
+
+.qa-title li:last-child {
+    width: auto;
+    height: 50px;
+}
+  
+.qa-title li:last-child input[type="text"] {
     width: 100%;
-    margin: 100px auto;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+  
+.qa-context li:last-child {
+    width: auto;
+    height: 600px;
+}
+  
+.qa-context li:last-child input[type="text"] {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 
-.button-wrap {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 0;
-}
-
-.button-wrap a {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;    
+.write-btn{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 0px;
+    margin-left: auto;
+    margin-top: 20px;
 
-    width: 85px;
-    height: 20px;
+    width: 88px;
+    height: 22px;
 
+    
     background: rgba(252, 251, 251, 0.75);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -47,118 +111,6 @@ a {
     /* Inside auto layout */
 
     flex: none;
-    order: 1;
-    flex-grow: 0;
-
-    position: fixed;
-    right: 40px;
-    bottom: 20px;
-
-    
-}
-
-.button-wrap a:first-child {
-    margin-left: 0;
-}
-
-.button-wrap a.on {
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #A587E0;
-    font-size: 12pt;
-
-
-    /* Inside auto layout */
-
-    flex: none;
     order: 0;
     flex-grow: 0;
-}
-
-.qa-write {
-    border-top: 2px solid #d9d9d9;
-    padding-left: 15px;
-}
-
-.qa-write .info {
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px solid #d9d9d9;
-    font-size: 0;
-}
-
-.qa-write .title dl {
-    font-size: 0;
-    text-align: left;
-}
-
-.qa-write .info dl {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-    text-align: left;
-}
-
-.qa-write .context dl {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-    text-align: left;
-}
-
-.qa-write .title dt,
-.qa-write .title dd,
-.qa-write .info dt,
-.qa-write .info dd,
-.qa-write .context dt,
-.qa-write .context dd
-{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 10pt;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-.qa-write .title dt,
-.qa-write .info dt {
-    width: 75px;
-}
-
-.qa-write .title dd {
-    width: 70%;
-}
-
-.qa-write .context dd {
-    width: 90%;
-    margin-inline-start: 55px;
-}
-
-.qa-write .title input[type="text"],
-.qa-write .info input[type="password"] {
-    
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box 1px solid #d9d9d9;
-    border-radius: 5px;
-    border: none;
-}
-
-.qa-write .title input[type="text"] {
-    width: 100%;
-}
-
-.qa-write .context input[type="qa-cnt"] {
-    width: 100%;
-    height: 300px;
-    padding: 15px;
-    background-color: #fff;
-    box-sizing: border-box;
-    border-color: #d9d9d9;
-    border-radius: 5px;
-    border: none;
-    resize: both;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
 }

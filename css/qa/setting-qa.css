@@ -1,100 +1,41 @@
 body{
     background-color: rgba(0, 0, 0, 0.04);
-    position: relative;
+    font-size: 12px; 
+}
 
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-       
+.a{
+    align-items: center;
+    justify-self: start;
+}
+
+.all-qa{
+    border-bottom: 1px solid #ccc;
     text-align: center;
+    padding-bottom: 25px;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.qa-list.wrap{
-    padding: 50px;
-}
-
-.qa-list-head,
-.qa-list-body .item {
+.item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 2fr 1fr;
     text-align: center;
-    padding: 10px;
-    font-size: 0;
-}
-
-.qa-list-head {
-    border-top: 2px solid #615E5E;
+    padding: 12px 5px 12px 5px;
     border-bottom: 1px solid #ccc;
 }
 
-
-.qa-list-body .item {
-    border-bottom: 1px solid #ccc;
+.secret{
+    margin-left: 10px;
+    background: url(/images/key.png);
+    width: 12px;
+    height: 13px;
+   
 }
 
-.qa-list-head > div
-{
-    text-align: center;
-    font-size: 14px;
-}
-.qa-list-body .item > div {
-    display: inline-block;
-    /* text-align: center; */
+.titles{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 14px;
-}
-
-.qa-list-head > div {
-    font-weight: 600;
-}
-
-.qa-list .num {
-    width: 15%;
-    padding-left: 12px;
-}
-
-.qa-list .answer {
-    width: 20%;
-    padding-right: 12px;
-}
-
-.qa-list-body div.answer {
-    text-align: center;
-}
-
-.qa-list .title {
-    width: 20%;
-    padding-left: 24px;
-    text-align: left;
-}
-
-.qa-list-body div.title a:hover {
-    text-decoration: underline;
-}
-
-.qa-list .secret {
-    background: url("../images/key.png");
-    width: 12px;
-    height: 13px;
-}
-
-.qa-list .date {
-    width:25%;
-    padding-left: 24px;
-    padding-right: 0;
+    text-align: start;
+    
 }
 
 .write-button{
