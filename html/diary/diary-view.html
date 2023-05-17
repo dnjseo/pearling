@@ -11,6 +11,7 @@
     <!-- <script src="/js/footer/footer.js"></script> -->
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
     <script src="/js/diary/diary.js"></script>
+    <script src="/js/diary/diary-comment.js"></script>
     <title>diary</title>
 </head>
 
@@ -21,30 +22,30 @@
     <!-- wrap -->
     <div class="wrap">
         <h1 class="d-none">다이어리 조회(친구 입장)</h1>
-        <section>
+        <section class="diary-view-section">
             <h1 class="d-none">다이어리 목록</h1>
 
             <!-- 셸 메뉴 -->
-            <!-- <section id="ms1">
+            <section id="ms1">
                 <div class="our-shell">
                     <a href="/html/shell/main-ourshell.html">
                         <p>our shell</p>
                     </a>
                 </div>
-                
-                <div class="my-shell"> 
+
+                <div class="my-shell">
                     <a href="/html/shell/main-myshell.html">
                         <p>my shell</p>
                     </a>
                 </div>
-            </section> -->
+            </section>
 
             <!-- 마이셸 내부 메뉴 -->
-            <!-- <section id = ms2>
-                <a class = ms2menu href="/html/shell/main-myshell.html">🌙 먼슬리 ></a>
-                <a class = ms2diary href="/html/diary/diary.html">📓 다이어리 ></a>
-                <a class = ms2menu href="/html/guestbook/guestbook.html">🫧 방명록 ></a>
-            </section> -->
+            <section id=ms2>
+                <a class=ms2menu href="/html/shell/main-myshell.html">🌙 먼슬리 ></a>
+                <a class=ms2diary href="/html/diary/diary.html">📓 다이어리 ></a>
+                <a class=ms2menu href="/html/guestbook/guestbook.html">🫧 방명록 ></a>
+            </section>
 
             <!----------------------- 달력 --------------------->
             <section id=d2>
@@ -60,28 +61,72 @@
                         <li>나 지금 와이어프레임 짜다가 디자인을 하고 있어요</li>
                         <div class="li-box">
                             <div class="btn-box">
-                                <img class="defence" src="/images/diary/heart.png" alt="heart">
-                                <img class="defence" src="/images/diary/comment.png" alt="comment">
+                                <button><img class="defence" src="/images/diary/heart.png" alt="heart"></button>
+                                <button class="comment-btn"><img class="defence" src="/images/diary/comment.png"
+                                        alt="comment"></button>
                             </div>
                             <p>2023/05/10</p>
                         </div>
+
+                        <!--<댓글 창>-------------------------------------------- -->
+                        <div class="comment-section">
+                            <form>
+                                <ul>
+                                    <li>
+                                        <div class="comment-list">
+                                            <span>채원</span>
+                                            <span>제 다이어리에 오셔서 정처기 정보 얻고 가세요~^^</span>
+                                            <span>2023.05.17 17:02</span>
+
+                                            <!-- <div class="comment-add-box"> -->
+                                                <textarea placeholder="댓글을 입력하세요"></textarea>
+                                                <button type="submit">댓글 작성</button>
+                                            <!-- </div> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+
+                        <!--<댓글 창>-------------------------------------------- -->
+
                         <li>이것만 하고 자야지,, 월요일에 봐요,,</li>
                         <div class="li-box">
                             <div class="btn-box">
-                                <img class="defence" src="/images/diary/heart.png" alt="heart">
-                                <img class="defence" src="/images/diary/comment.png" alt="comment">
+                                <button><img class="defence" src="/images/diary/heart.png" alt="heart"></button>
+                                <button class="comment-btn"><img class="defence" src="/images/diary/comment.png"
+                                        alt="comment"></button>
                             </div>
-                            <p>2023/05/10</p>
+                            <span>2023/05/10</span>
                         </div>
+                        <!--<댓글 창>-------------------------------------------- -->
+                        <div class="comment-section">
+                            <form>
+                                <ul>
+                                    <li>
+                                        <div class="comment-list">
+                                            <span>채원</span>
+                                            <span>제 다이어리에 오셔서 정처기 정보 얻고 가세요~^^</span>
+                                            <span>2023.05.17 17:02</span>
+
+                                            <!-- <div class="comment-add-box"> -->
+                                                <textarea placeholder="댓글을 입력하세요"></textarea>
+                                                <button class="defence" type="submit">댓글 작성</button>
+                                            <!-- </div> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+
+                        <!--<댓글 창>-------------------------------------------- -->
                     </ul>
                 </form>
-
-                <!----------------------- 다이어리 내용 --------------------->
-
-                <!-- <div class="add-btn">
-                    <button><a href="/diary-edit.html">추가</a></button>
-                </div> -->
             </div>
+            <!----------------------- 다이어리 내용 --------------------->
+
+
+
         </section>
     </div>
 

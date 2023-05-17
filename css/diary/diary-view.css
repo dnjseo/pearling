@@ -5,94 +5,94 @@ body {
 
 
 /* ========쉘 메뉴 ===================== */
-#ms1{
+#ms1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15%;
-    
+
     width: 100%;
     height: 50px;
-    
+
     background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 
-    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+        inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    
+
     flex: none;
     order: 1;
     flex-grow: 0;
-    
+
     color: rgba(199, 192, 196, 1);
 }
 
-    #ms1 > .menuOurShell{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+#ms1>.menuOurShell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        width: 165px;
-        height: 106px;
+    width: 165px;
+    height: 106px;
 
-        border-radius: 20px;
+    border-radius: 20px;
 
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
-    #ms1 > .our-shell > a{
-        width: 100px;
-    }
+#ms1>.our-shell>a {
+    width: 100px;
+}
 
-    #ms1 > .our-shell > a > img{
-        width: 50px;
-    }
+#ms1>.our-shell>a>img {
+    width: 50px;
+}
 
-    #ms1 > .our-shell > a > p{
-        font-family: 'Pretendard-SemiBold';
-        font-size: 14px;
-        color : #797979;
-        letter-spacing: 0.02em;
-    }
-
-
-    #ms1 > .menuMyShell{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: 165px;
-        height: 106px;
-
-        border-radius: 20px;
-
-        /* Inside auto layout */
-
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
+#ms1>.our-shell>a>p {
+    font-family: 'Pretendard-SemiBold';
+    font-size: 14px;
+    color: #797979;
+    letter-spacing: 0.02em;
+}
 
 
-    #ms1 > .my-shell > a > img{
-        width: 50px;
-    }
-    
-    #ms1 > .my-shell > a > p{
-        font-family: 'Pretendard-SemiBold';
-        font-size: 14px;
-        color : rgba(165, 135, 224, 1);
-        letter-spacing: 0.02em;
-    }
+#ms1>.menuMyShell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 165px;
+    height: 106px;
+
+    border-radius: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+#ms1>.my-shell>a>img {
+    width: 50px;
+}
+
+#ms1>.my-shell>a>p {
+    font-family: 'Pretendard-SemiBold';
+    font-size: 14px;
+    color: rgba(165, 135, 224, 1);
+    letter-spacing: 0.02em;
+}
 
 
 /* =========마이셸 하부 메뉴======================= */
 
-#ms2{
+#ms2 {
     font-size: 12px;
 
     display: flex;
@@ -112,13 +112,13 @@ body {
 }
 
 
-#ms2 > .ms2diary {
+#ms2>.ms2diary {
     font-family: 'Pretendard-SemiBold';
-    color : rgba(165, 135, 224, 1);
+    color: rgba(165, 135, 224, 1);
 }
 
 
-#ms2 > .ms2menu {
+#ms2>.ms2menu {
     font-family: 'Pretendard-Regular';
     color: #797979
 }
@@ -152,14 +152,20 @@ body {
     z-index: 1;
 }
 
-.diary-list > form > ul > .li-box {
+.diary-list>form>ul>.li-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.diary-list > form > ul > .li-box > .btn-box > img:active {
+.diary-list>form>ul>.li-box>.btn-box>button {
+    width: 28px;
+    height: 22px;
+    border: none;
+}
+
+.diary-list>form>ul>.li-box>.btn-box>button:active {
     background-color: #A587E0;
 }
 
@@ -181,6 +187,56 @@ body {
     border-radius: 15px;
 }
 
+/* =========댓글 창=========================== */
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    justify-content: center;
+    padding: 20px 10px;
+
+    height: 80%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.comment-list> :nth-child(1) {
+    font-weight: bold;
+}
+
+.comment-list> :nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.comment-list> textarea {
+    padding-left: 10px;
+}
+
+.comment-list> button{
+    margin-top: 5px;
+    width: 90px;
+    height: 31px;
+
+    align-self: flex-end;
+
+    background: rgba(252, 251, 251, 0.75);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: none;
+
+    font-size: 12px;
+    color: #797979;
+}
+
+
+.comment-section {
+    display: none;
+}
+
 /* ==========캘린더 조종 ===================== */
 
 #calendar {
@@ -189,44 +245,45 @@ body {
     padding-right: 50px;
 }
 
-:root{
+:root {
     --fc-border-color: none;
 
 
-        /* 캘린더 버튼 */
-        --fc-button-text-color:rgba(165, 135, 224, 1);
-        --fc-button-bg-color: none;
-        --fc-button-border-color: none;
-        --fc-button-hover-bg-color: none;
-        --fc-button-hover-border-color: #1a252f;
-        --fc-button-active-bg-color: #1a252f;
-        --fc-button-active-border-color: #151e27;
+    /* 캘린더 버튼 */
+    --fc-button-text-color: rgba(165, 135, 224, 1);
+    --fc-button-bg-color: none;
+    --fc-button-border-color: none;
+    --fc-button-hover-bg-color: none;
+    --fc-button-hover-border-color: #1a252f;
+    --fc-button-active-bg-color: #1a252f;
+    --fc-button-active-border-color: #151e27;
 }
 
-.fc{
+.fc {
     flex-direction: column;
     text-align: center;
 }
-.fc-toolbar-chunk{
+
+.fc-toolbar-chunk {
     font-size: 12px;
 }
 
-.fc-toolbar-chunk > .fc-toolbar-title{
+.fc-toolbar-chunk>.fc-toolbar-title {
     font-family: 'Pretendard-SemiBold';
     font-size: 12px;
 }
 
 
-.fc-scrollgrid-sync-table{
+.fc-scrollgrid-sync-table {
     height: 100px;
 }
 
-.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
     min-height: 0px;
     min-width: 0px;
 }
 
-.fc .fc-daygrid-day-number{
+.fc .fc-daygrid-day-number {
     padding: 0px;
 }
 
