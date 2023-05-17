@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let dayIndex = 0;
     updateDate(dayIndex);
 
+
     function updateDate(offset) {
         let today = new Date();
         today.setDate(today.getDate() + offset);
@@ -80,8 +81,19 @@ document.addEventListener('DOMContentLoaded', function() {
         let mstoday = document.querySelector("#ms4");
         mstoday.querySelector('.today-day').innerText = month + "." + day + " " + date;
     });
-    
 
+
+    function toggleTextDecoration(checkbox) {
+        var taskElement = mstoday.querySelector(".task");
+        if (checkbox.checked) {
+            taskElement.style.textDecoration = 'line-through';
+        } else {
+            taskElement.style.textDecoration = 'none';
+        }
+    }
+
+    
+  
 
 
 

@@ -375,7 +375,12 @@
             justify-content: center;
         }
 
-        .friendList > li >  p {
+        .friendList > li >  a {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
             font-family: 'Pretendard-Regular';
             font-style: normal;
             font-weight: 600;
