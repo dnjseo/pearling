@@ -1,17 +1,5 @@
 body{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
-
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-       
-    text-align: center;
-
-    color: #797979;
-
-    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF; 
 }
 
 *{
@@ -40,7 +28,7 @@ a{
     border-radius: 30px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.3fr 1fr;
     place-items: center;
 
     margin: 22px;
