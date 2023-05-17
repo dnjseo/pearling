@@ -1,18 +1,3 @@
-/* 기본폰트 */
-
-@font-face {
-        font-family: 'Pretendard-Regular';
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
-    }
-@font-face {
-    font-family: 'Pretendard-SemiBold';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}    
-
 /* 오늘 달력용 폰트 */
     @font-face {
         font-family: 'ghanachoco';
@@ -23,6 +8,7 @@
 
     .wrap{
         font-family: 'Pretendard-Regular';
+        color: rgba(97, 94, 94, 1);
 
         display: flex;
         flex-direction: column;
@@ -34,8 +20,6 @@
         background: linear-gradient(0deg,
         rgba(0, 0, 0, 0.04), 
         rgba(0, 0, 0, 0.04)), #FFFFFF;
-
-
     }
 
 
@@ -53,7 +37,8 @@
         height: 50px;
         
         background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+         inset 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 30px;
         
         flex: none;
@@ -139,8 +124,6 @@
 
         width: 90%;
         height: 190px;
-
-        color: black;
         font-size: 20px;
 
         flex: none;
@@ -279,66 +262,54 @@
 
 /* ===================== 친구 섹션 ===================== */
    
-    #m3-friends{
+    #m3-friends {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;    
         gap: 10px;        
-        width: 90%;
+        width: 95%;
         height: 170px;
-        
-        
-        /* Inside auto layout */
-        
+                
         flex: none;
         order: 3;
         flex-grow: 0;
     }
 
         /* 친구 찾기 돋보기 */
-        .findFreind {
-            display: grid;
-            grid-template-columns: 100px 100px 100px;
-            /* Inside auto layout */
-            
+        .findFriend {  
+            display: flex;
+            justify-items: flex-end;            
+        
             flex: none;
             order: 0;
             flex-grow: 0;
+
+            /* 박스 모양 */
+            /* background: #6B6B6B;
+            padding: 8px;
+            box-shadow: inset 0px 0px 55px #FFFFFF, inset 0px 32px 16px rgba(199, 192, 196, 0.09), inset 0px 16px 8px rgba(199, 192, 196, 0.09), inset 0px -79px 40px rgba(199, 192, 196, 0.1), inset 0px -36px 30px rgba(199, 192, 196, 0.15), inset 0px -23px 25px rgba(199, 192, 196, 0.17);
+            border-radius: 10px;
+            transform: rotate(0.28deg); */
+
+            /* background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15), 
+            inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 40px;
+            padding: 8px; */
         }
 
-        .findFriendButton{
-            font-family: 'Pretendard-Regular';
-            font-weight: 600;
+        .findFriend-a{
+            font-family: 'Pretendard-SemiBold';
             font-size: 12px;
-            color: #A587E0;
-
-
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-            border : none;
-
-            width: 100px;
-            height: 30px;
-
-            background: rgba(252, 251, 251, 0.75);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 
-            inset 0px 3px 5px rgba(0, 0, 0, 0.25);
-            border-radius: 30px;
-            /* border : none; */
-
-            /* Inside auto layout */
-
-            flex: none;
-            order: 0;
-            flex-grow: 0;
+            color: rgba(97, 94, 94, 1);
+            letter-spacing: 0.05em;
         }
 
 
         #m3-friends > .friendList {
+            color: #797979;
+
             overflow-x: scroll;
             width: 100%;
 
@@ -348,11 +319,14 @@
 
             gap: 20px;
 
+
+            /* 박스 모양 */
             background: rgba(255, 255, 255, 0.7);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15), 
+            inset 0px 2px 2px rgba(0, 0, 0, 0.25);
             border-radius: 40px;
+
             
-            /* Inside auto layout */
             flex: none;
             order: 1;
             flex-grow: 0;
@@ -376,6 +350,8 @@
         }
 
         .friendList > li >  a {
+            gap: 5px;
+
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -386,7 +362,7 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 16px;
-            color: rgba(79,79,79,79,100);
+            color: rgba(97, 94, 94, 1);
             display: flex;
             align-items: center;
             text-align: center;

@@ -197,7 +197,7 @@ input[type=checkbox] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 80%;
+    width: 85%;
 
     padding-right: 30px;
     padding-top: 10px;
@@ -302,6 +302,75 @@ input[type=checkbox] {
     transform: rotate(0.28deg);
 }
 
+  /* ==========(+) plus 추가 버튼 (픽스)===================== */
+
+.plus a{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+
+    color: white;
+    font-weight: semi-bold;
+    font-size: 25px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    background: linear-gradient(0deg,
+        rgba(165, 135, 224, 0.2), rgba(165, 135, 224, 0.2)),
+        rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25), 
+        inset 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.plus-todo{
+    position: fixed;
+    bottom: 12%;
+    right: 10%;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(0deg,
+    rgba(165, 135, 224, 0.2), rgba(165, 135, 224, 0.2)),
+    rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25), 
+        inset 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.plus-schedule{
+    position: fixed;
+    bottom: 7%;
+    right: 20%;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(0deg,
+    rgba(165, 135, 224, 0.2), rgba(165, 135, 224, 0.2)),
+    rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25), 
+        inset 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
 
 
 
@@ -323,3 +392,5 @@ input[type=checkbox] {
         width: 80%;
         height: 50%;
   }
+
+
