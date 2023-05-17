@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/import.css" type="text/css" rel="stylesheet">
+    <link href="/css/setting-calander-category.css" type="text/css" rel="stylesheet">
+    <script src="/js/footer/footer.js"></script>
+    <script src="/js/setting-calander-category.js"></script>
+    <title>setting-calander-category</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!--header-wrap-->
+        <div class="header-wrap">
+            <!--header-->
+            <div class="header">
+                <h1 class="back"><a href="./setting-calander.html"><img src="/images/back.png" alt="logo"/></a></h1>
+                <h2 class="title">카테고리 설정</h2>
+            </div>  
+        <!-- header-->
+        </div>
+        <!--header-wrap-->
+    </header>
+
+    <!-- wrap -->
+    <div id="wrap" class="wrap">
+
+        <section id="setting-calander">
+            <ul>
+                <li><span></span>약속</li>
+                <li><span></span>시험</li>
+                <li><span></span>생일</li>
+                <li><span></span>운동</li>
+                <li class="category-add">카테고리 추가<span>></span></li>
+            </ul>
+        </section>
+
+        <!-- 카테고리 추가 창 -->
+        <section id="category-modal">
+            <div class="category-modal-content">
+                <p class="category-title">🫧 카테고리 추가</p>
+                <div class="category-name">
+                    <p>캘린더 이름</p>
+                    <input type="text" >
+                </div>
+                <div class="category-color">
+                    <p>색상</p>
+                    <input type="color" >
+                </div>
+                <button class="addbtn">추가</button>
+            </div>
+        </section>
+
+        <!-- alert창 ------------------------------->
+        <div id="confirm-modal" class="modal">
+            <div class="modal-content">
+                <p>🫧 카테고리 추가</p>
+                <p>카테고리 추가가 완료되었습니다.</p>
+                <button class="confirm-yes">확인</button>
+            </div>
+        </div>
+        <!-- alert창 ------------------------------->
+
+        <!-- 뒤에 배경 어둡게 하기 -->
+        <div class="black"></div>
+
+    </div>
+    <!-- /wrap -->
+
+    <footer id="footer"></footer>
+</body>
+
+</html>
