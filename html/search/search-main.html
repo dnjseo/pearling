@@ -8,47 +8,61 @@
     <link href="/css/import.css" type="text/css" rel="stylesheet">
     <link href="/css/search/search-main.css" type="text/css" rel="stylesheet">
     <script src="/js/header/header.js"></script>
+    <script src="/js/footer/footer.js"></script>
+    <script src="/js/search/search-main.js"></script>
 </head>
 <body>
+    <!-- header -->
     <header id="header"></header>
 
-    <div>
-        <div class="search-wrap">
+    <!-- wrap -->
+    <div class="wrap" id="dropdown">
+        <button class="drop-search">
             <p class="icon"></p>
-            <div class="dropdown-btn">검색</div>
-        </div>
-            <div class="dropdown-submenu">
-                <div class="menu1">
-                    <p>최근 검색 기록</p>
-                    <p>모두 지우기</p>
-                </div>
-                <div class="menu1-detail">
-                    <ul>
-                        <li class="search-items">
+            <p class="dropdown-btn">검색</p>
+        </button>
+        <div class="dropdown-submenu">
+            <div class="menu1">
+                <p>최근 검색 기록</p>
+                <p>모두 지우기</p>
+            </div>
+            <div class="menu1-detail">
+                <ul>
+                    <li class="search-items">
+                        <button type="button" value="1" class="drop-option">
                             <p></p>
-                            <p>신림에서 홍대까지 가는 법</a></p>
+                            <p><a href="#">신림에서 홍대까지 가는 법</a></p>
                             <p></p>
-                        </a></li>
-                        <li class="search-items">
+                        </button>
+                    </a></li>
+                    <li class="search-items">
+                        <button type="button" value="2" class="drop-option">
                             <p></p>
-                            <p>유튜브 플레이리스트 추천</p>
+                            <p><a href="#">유튜브 플레이리스트 추천</a></p>
                             <p></p>
-                        </li>
-                        <li class="search-items">
+                        </button>
+                    </li>
+                    <li class="search-items">
+                        <button type="button" value="3" class="drop-option">
                             <p></p>
                             <p><a href="#">점심</a></p>
                             <p></p>
-                        </li>
-                        <li class="search-items">
+                        </button>
+                    </li>
+                    <li class="search-items">
+                        <button type="button" value="4" class="drop-option">
                             <p></p>
                             <p><a href="#">7월에 가면 좋을 해외여행지</a></p>
                             <p></p>
-                        </li>
-                    </ul>
-                </div>
+                        </button>
+                    </li>
+                </ul>
             </div>
-        
+        </div>   
     </div>
-
+    <!-- wrap -->
+    
+    <!-- footer -->
+    <footer id="footer"></footer>
 </body>
 </html>

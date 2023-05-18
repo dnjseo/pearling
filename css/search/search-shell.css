@@ -1,8 +1,8 @@
-body{
+.wrap{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
 }
 
-.search-wrap{
+.search-part{
     box-sizing: border-box;
 
     /* Auto layout */
@@ -55,7 +55,7 @@ body{
     flex-grow: 0;
 }
 
-.detail-wrap{
+.detail-part{
     display: flex;
     flex-direction: column;
     justify-content: center;
