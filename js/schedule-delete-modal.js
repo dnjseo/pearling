@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    let header = document.querySelector(".header")
+    let header = document.querySelector(".header2")
     let delBtn = header.querySelector(".del-btn");
 
     let deleteModal = document.getElementById("delete-modal");

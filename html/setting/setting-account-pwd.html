@@ -9,27 +9,29 @@
     <link href="/css/setting-account-pwd.css" type="text/css" rel="stylesheet">
     <script src="/js/header/header.js"></script>
     <script src="/js/footer/footer.js"></script>
-    <script src="/js/footer/footer_list.js"></script>
-    <title>Sample</title>
+    <script src="/js/confirm-modal.js"></script>
+    <title>setting-account-pwd</title>
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <!--header-wrap-->
         <div class="header-wrap">
             <!--header-->
-            <div class="header">
-                <h1 class="back"><a><img src="/images/back.png" alt="logo"/></a></h1>
+            <div class="header2">
+                <h1 class="back"><a><img src="/images/back.png" alt="logo" /></a></h1>
                 <h2 class="title">비밀번호 변경</h2>
-            </div>  
-        <!-- header-->
+            </div>
+            <p class="gray_border"></p>
+            <!-- header-->
         </div>
         <!--header-wrap-->
     </header>
 
     <!-- wrap -->
     <div class="wrap">
-        <section>
+        <section id="d1">
             <h1 class="d-none">비밀번호 변경</h1>
             <div class="img-box">
                 <img src="/images/profile/purple_circle.png" alt="pearl">
@@ -48,17 +50,27 @@
                     <input id="pwd3" type="text" value="변경할 비밀번호 확인 입력">
                 </div>
             </div>
-            <div class="add-btn">
-                <button>확인</button>
+            <div class="add-btn-box">
+                <button class="add-btn">확인</button>
             </div>
         </section>
+
+        <!-- 컨펌 모달 ------------------------------------------ -->
+
+        <div id="confirm-modal" class="modal">
+            <div class="modal-content">
+                <p>🫧 Message</p>
+                <p>비밀번호 변경이 완료되었습니다.</p>
+                <button class="confirm-yes">확인</button>
+            </div>
+        </div>
 
     </div>
     <!-- /wrap -->
 
     <!-- footer -->
-    <!-- <footer id="footer_list"></footer>
-    <footer id="footer"></footer> -->
+
+    <!-- <footer id="footer"></footer> --> -->
 </body>
 
 </html>

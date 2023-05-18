@@ -13,64 +13,66 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin:  20px;
+    margin: 20px;
 }
 
-.img-box > img {
+.img-box>img {
     width: 40px;
     height: 40px;
 }
 
 .pwd-change-box {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
 }
 
-
-
-.pwd-change-box>div {
-    display: flex;
-    flex-direction: column;
-}
-
 .pwd-change-box>div>label {
-    margin-bottom: 5px;
-    margin-left: 20px;
+    align-self: stretch;
 }
 
 .pwd-change-box>div>input {
     align-self: center;
     justify-self: center;
     padding-left: 10px;
+    margin-top: 5px;
 
-    width: 90%;
+    width: 95%;
     height: 37px;
-    /* left: 10px;
-    top: 10px; */
 
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
+
+    color: #797979;
 }
 
-.add-btn {
+.add-btn-box {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-right: 20px;
 }
 
-.add-btn>button {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+.add-btn {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
+
+    width: 85px;
+    height: 30px;
+
+    color: #797979;
+
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), inset 0px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 }
 
-.add-btn>button:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    border: none;
+.add-btn:active {
+    opacity: 0.8;
 }

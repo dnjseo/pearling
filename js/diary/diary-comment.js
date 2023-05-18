@@ -6,9 +6,14 @@ window.addEventListener('load', function () {
     let commentSections = section.querySelectorAll(".comment-section");
 
     for (let i = 0; i < commentBtns.length; i++) {
+
         commentBtns[i].onclick = function (e) {
             e.preventDefault();
+            if (commentSections[i].style.display === "block") {
+            commentSections[i].style.display = "none";
+            } else {
             commentSections[i].style.display = "block";
-        }
+            }
+            }
     }
 });
