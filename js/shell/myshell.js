@@ -1,3 +1,24 @@
+// 셸 메뉴 삽입
+document.addEventListener("DOMContentLoaded", function() {
+fetch("/html/shell/myshell-menu.html")
+  .then((response) => response.text())
+  .then((data) => {
+    const parser = new DOMParser();
+    const htmlDocument = parser.parseFromString(data, "text/html");
+    const monthlyLink = htmlDocument.querySelector(".monthly");
+    const diaryLink = htmlDocument.querySelector(".diary");
+    const guestbookLink = htmlDocument.querySelector(".guestbook");
+    
+    monthlyLink.classList.remove("notselected")
+    guestbookLink.classList.remove("guestbook")
+    diaryLink.classList.remove("diary");
+    document.getElementById("myshell-menu").innerHTML = htmlDocument.documentElement.innerHTML;
+  })
+  .catch((error) => console.error(error));
+});
+
+
+//캘린더
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
