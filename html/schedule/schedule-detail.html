@@ -10,6 +10,7 @@
     <script src="/js/header/header.js"></script>
     <script src="/js/schedule-add.js"></script>
     <script src="/js/confirm-modal.js"></script>
+    <script src="/js/schedule-delete-modal.js"></script>
     <!-- <script src="/js/footer/footer.js"></script> -->
     <title>schedule-detail</title>
 </head>
@@ -22,7 +23,7 @@
             <!--header-->
             <div class="header">
                 <h1 class="back"><a><img src="/images/back.png" alt="logo" /></a></h1>
-                <h2 class="trash"><a><img src="/images/trash.png" alt="trash"></a></h2>
+                <h2 class="trash del-btn"><a><img src="/images/trash.png" alt="trash"></a></h2>
             </div>
             <!-- header-->
         </div>
@@ -81,18 +82,23 @@
                 <!-- <input type="button" id="color-tag" name="color-tag"> -->
             </div>
 
-            <!-- 컨펌 모달 ------------------------------------------ -->
-
-            <div id="confirm-modal" class="modal">
-                <div class="modal-content">
-                    <p>🫧 Message</p>
-                    <p>일정이 등록되었습니다.</p>
-                    <button class="confirm-yes">확인</button>
-                </div>
-            </div>
-
             <!-- <footer id="footer"></footer> -->
         </section>
+
+        <!-- 삭제 모달창 ------------------------------->
+
+        <div id="delete-modal" class="modal">
+            <div class="del-modal-content">
+                <p>🫧 Message</p>
+                <p>일정을 삭제하시겠습니까?</p>
+                <div class="del-modal-btns">
+                    <button class="del-confirm-yes">예</button>
+                    <button class="del-confirm-no">아니오</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 삭제 모달창 ------------------------------->
 
     </div>
 

@@ -9,6 +9,7 @@
     <link href="/css/diary/diary-edit.css" type="text/css" rel="stylesheet">
     <script src="/js/header/header.js"></script>
     <script src="/js/confirm-modal.js"></script>
+    <script src="/js/delete-modal.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
     <script src="/js/diary/diary.js"></script>
     <title>diary-edit</title>
@@ -22,7 +23,7 @@
     <div class="wrap">
 
         <!-- 달력 ------------------------------->
-        <section id = d2>
+        <section id=d2>
             <div id='calendar'></div>
         </section>
 
@@ -30,15 +31,15 @@
 
         <!-- 본문 ------------------------------->
         <section class="diary-detail">
-            <div class="diary-detail-p">
-                <p>
+            <div class="diary-detail-span">
+                <span>
                     이것만 하고 자야지...
                     월요일에 봐요...
-                </p>
+                </span>
             </div>
             <div class="btns">
-                <input type="button" value="🔒">
-                <input type="button" value="📷">
+                <button>🔒</button>
+                <button>📷</button>
             </div>
         </section>
         <!-- 본문 ------------------------------->
@@ -55,7 +56,7 @@
                 <button class="add-btn">등록</button>
             </div>
         </section>
-        <!-- alert창 ------------------------------->
+        <!-- 등록 모달창 ------------------------------->
 
         <div id="confirm-modal" class="modal">
             <div class="modal-content">
@@ -65,7 +66,22 @@
             </div>
         </div>
 
-        <!-- alert창 ------------------------------->
+        <!-- 등록 모달창 ------------------------------->
+
+        <!-- 삭제 모달창 ------------------------------->
+
+        <div id="delete-modal" class="modal">
+            <div class="del-modal-content">
+                <p>🫧 Message</p>
+                <p>다이어리를 삭제하시겠습니까?</p>
+                <div class="del-modal-btns">
+                    <button class="del-confirm-yes">예</button>
+                    <button class="del-confirm-no">아니오</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 삭제 모달창 ------------------------------->
 
     </div>
     <!-- /wrap ------------------------------->
