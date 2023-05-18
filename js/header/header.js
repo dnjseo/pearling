@@ -6,16 +6,14 @@ fetch("/html/header/header.html")
       var menu = document.getElementById('menu');
       var subMenu = document.getElementById('sub_menu');
       var close = document.getElementById('close');
-      var backgound = document.getElementById('backgound');
       
       menu.addEventListener('click', function() {
-        subMenu.style.display = 'block'; 
-        backgound.style.display = 'block'; 
+        subMenu.style.right = "0";
+        console.log("클릭");
       });
 
       close.addEventListener('click', function(){
-        subMenu.style.display = 'none';
-        backgound.style.display = 'none';
+        subMenu.style.right = "-100%";
       });
   })
   .catch((error) => console.error(error));
