@@ -84,10 +84,10 @@
 #click-menu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 140px;
+    width: 100%;
+    column-gap: auto;
     place-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px 22px;
    
 }
 
@@ -141,6 +141,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+    width: 90%;
 }
 
 .todo-list{
@@ -157,18 +158,17 @@
 
 .todo-statement{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-columns: 0.7fr 1fr 2fr 5fr;
     place-items: center;
 }
 
 .todo-statement p:first-child {
-    justify-self: center;
+    justify-self: start;
 }
 
 .todo-statement p:nth-child(2) {
-    justify-self: start;
-    
-      
+    margin-left: 5px;
+    justify-self: start;     
 }
 
 .todo-statement p:last-child {
@@ -197,15 +197,16 @@
 
 .schedule-statement{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-columns: 0.7fr 1fr 2fr 5fr;
     place-items: center;
 }
 
 .schedule-statement p:first-child {
-    justify-self: center;
+    justify-self: start;
 }
 
 .schedule-statement p:nth-child(2) {
+    margin-left: 5px;
     justify-self: start;
 }
 

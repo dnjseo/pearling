@@ -84,10 +84,10 @@
 #click-menu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 140px;
+    width: 100%;
+    column-gap: auto;
     place-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px 22px;
    
 }
 
@@ -140,13 +140,16 @@
 .account-list{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: self-start;
+    width: 100%;
+    margin-left: 20%;
 }
 
 .account-box{
     display: grid;
     grid-template-columns: 1.4fr 2fr 4fr;
     place-items: center left;
+    width: 100%;
     margin-bottom: 25px;
 }
 
