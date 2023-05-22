@@ -8,12 +8,14 @@ fetch("/html/shell/myshell-menu.html")
     const monthlyLink = htmlDocument.querySelector(".monthly");
     const diaryLink = htmlDocument.querySelector(".diary");
     const guestbookLink = htmlDocument.querySelector(".guestbook");
-    
+
     monthlyLink.classList.remove("notselected")
     guestbookLink.classList.remove("guestbook")
     diaryLink.classList.remove("diary");
     document.getElementById("myshell-menu").innerHTML = htmlDocument.documentElement.innerHTML;
-  })
+
+
+})
   .catch((error) => console.error(error));
 });
 
@@ -113,10 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    
-  
-
-
+   
 
 
     //모달로 잘못 했슈...
@@ -128,6 +127,28 @@ document.addEventListener('DOMContentLoaded', function() {
  
 
   });
+
+
+  window.addEventListener("load", function () {
+    let plus1 = document.querySelector('.plus');
+    let plusDetail = document.querySelector('.plusDetail');
+    let plusTodo = document.querySelector('.plus-todo');
+    let isOpen = false; 
+
+    plus1.addEventListener('click', function(){
+        if (isOpen) {
+            plusDetail.style.display = 'none';
+            isOpen = false;
+          } else {
+            plusDetail.style.display = 'block';
+            isOpen = true;
+          }
+    }
+    
+
+    
+    );
+});
 
 
 

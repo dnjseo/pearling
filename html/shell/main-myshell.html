@@ -12,7 +12,6 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
     <script src="/js/shell/shell-menu.js"></script>
     <script src="/js/shell/myshell.js"></script>
-
     <title>my shell</title>
 </head>
 <body>
@@ -24,13 +23,16 @@
 
         <section id="shell-menu"></section>
 
-        <section id="myshell-menu"></section>
+        <section id="myshell-menu">
+        </section>
 
         <section id = ms3>
+            <h1 class="d-none">캘린더</h1>
             <div id='calendar'></div>
         </section>
 
         <section id = ms4>
+            <h1 class="d-none">일정 리스트</h1>
             <div class = "today">
                 <img src="/images/profile/circle.png">
                 <span class="today-day"></span>
@@ -39,6 +41,7 @@
                 <div class="schedule">
                     <p1>to do.</p1>
                     <ul>
+    
                         <li>
                             <div class="content">
                                 <input type="checkbox">
@@ -105,15 +108,18 @@
         </section>
 
         <section id="dayDetail" class="ms-hidden">
+            <h1 class="d-none">일정 디테일</h1>
             <div class="modal-content">
                 <button class="closeButton">닫기</button>
                 <!-- 섹션 내용 -->
-        </div>
-          </section>
+            </div>
+        </section>
 
-          <div class="plus"><a href="/html/schedule/schedule-add.html">📝</a></div>
-          <div class="plus-todo"><a href="/html/schedule/schedule-add.html">할 일</a></div>
-          <div class="plus-schedule"><a href="/html/schedule/schedule-add.html">일정</a></div>
+         <div class="plus">📝</div>
+         <div class="plusDetail">
+            <div class="plus-todo"><a href="/html/schedule/schedule-add.html">할 일</a></div>
+            <div class="plus-schedule"><a href="/html/schedule/schedule-add.html">일정</a></div>
+         </div>
 
     </div>
     <!-- /wrap -->

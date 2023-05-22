@@ -78,12 +78,28 @@
     }
 
 
-    #shell-menu > .my-shell > a > p{
+    #shell-menu > .my-shell > a > .our-shell{
         font-family: 'Pretendard-SemiBold';
         font-size: 14px;
         color : rgba(165, 135, 224, 1);
         letter-spacing: 0.02em;
     }
+
+
+    #shell-menu > .my-shell > a > .my-shell{
+        font-family: 'Pretendard-SemiBold';
+        font-size: 14px;
+        color : rgba(165, 135, 224, 1);
+        letter-spacing: 0.02em;
+    }
+
+    #shell-menu > .my-shell > a > .notselected{
+        font-family: 'Pretendard-SemiBold';
+        font-size: 14px;
+        color: #797979;
+        letter-spacing: 0.02em;
+    }
+
 
     
 
