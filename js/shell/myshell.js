@@ -133,21 +133,29 @@ document.addEventListener('DOMContentLoaded', function() {
     let plus1 = document.querySelector('.plus');
     let plusDetail = document.querySelector('.plusDetail');
     let plusTodo = document.querySelector('.plus-todo');
+    let plusSchedule = this.document.querySelector('.plus-schedule');
     let isOpen = false; 
 
-    plus1.addEventListener('click', function(){
-        if (isOpen) {
-            plusDetail.style.display = 'none';
-            isOpen = false;
-          } else {
-            plusDetail.style.display = 'block';
-            isOpen = true;
-          }
-    }
+    plus1.addEventListener('click',() => {
+        plusDetail.classList.toggle('act');
+    })
+
+    // plus1.addEventListener('click', function(){
+    //     if (isOpen) {
+    //         plusDetail.sytle.opacity = "1"
+    //         isOpen = false;
+    //       } else {
+    //         plusDetail.sytle.opacity = "0";
+    //         isOpen = true;
+    //       }
+    // }
+    // ,
     
+    // plusTodo.addEventListener('click', function(){
+    // })
 
     
-    );
+    // );
 });
 
 
