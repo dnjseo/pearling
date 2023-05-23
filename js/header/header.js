@@ -3,9 +3,10 @@ fetch("/html/header/header.html")
   .then((data) => {
       document.getElementById("header").innerHTML = data;
       
-      var menu = document.getElementById('menu');
-      var subMenu = document.getElementById('sub_menu');
-      var close = document.getElementById('close');
+      var header = document.getElementById('header');
+      var menu = header.querySelector(".menu");
+      var subMenu = document.getElementById('sub-menu');
+      var close = subMenu.querySelector('.sub-close');
       
       menu.addEventListener('click', function() {
         subMenu.style.right = "0";
