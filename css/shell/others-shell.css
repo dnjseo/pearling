@@ -5,7 +5,6 @@ input[type=checkbox] {
 
 
 .wrap{
-    font-family: 'Pretendard-Regular';
 
     display: flex;
     flex-direction: column;
@@ -14,12 +13,6 @@ input[type=checkbox] {
     padding-top: 10px;
     padding-bottom: 30px;
     gap: 20px;
-
-
-    background: linear-gradient(0deg,
-    rgba(0, 0, 0, 0.04), 
-    rgba(0, 0, 0, 0.04)), #FFFFFF;
-
 }
 
 /* ==========(s1) 프로필 섹션 ===================== */

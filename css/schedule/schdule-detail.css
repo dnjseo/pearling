@@ -1,8 +1,4 @@
-@import url(/css/delete-modal.css);
-
-body {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
-}
+@import url(/css/system/delete-modal.css);
 
 .schdule-add-title {
     display: flex;

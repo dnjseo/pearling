@@ -8,6 +8,10 @@ body{
     flex-wrap: wrap;
 }
 
+.header{
+    background: none;
+}
+
 .clam li{
     cursor: pointer;
 }

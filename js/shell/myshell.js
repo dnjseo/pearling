@@ -140,19 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
         plusDetail.classList.toggle('act');
     })
 
-    // plus1.addEventListener('click', function(){
-    //     if (isOpen) {
-    //         plusDetail.sytle.opacity = "1"
-    //         isOpen = false;
-    //       } else {
-    //         plusDetail.sytle.opacity = "0";
-    //         isOpen = true;
-    //       }
-    // }
-    // ,
-    
-    // plusTodo.addEventListener('click', function(){
-    // })
 
     
     // );

@@ -87,16 +87,13 @@
 .menu-header{
     /* item layout */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     box-sizing: border-box;
 }
 
-.sub-close{
+.menu-header .sub-close{
     font-size: 30px;
-    font-family: 'Pretendard-Regular';
     cursor: pointer;
-
     transition: right 0.4s ease-in-out;
 }
 
