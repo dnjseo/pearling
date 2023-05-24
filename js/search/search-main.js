@@ -3,9 +3,9 @@ fetch("/html/search/search-main.html")
   .then((data) => {
     document.getElementById("dropdown").innerHTML = data;
     
-    var dropSearch = document.querySelector('.drop-search');
-    var submenu = document.querySelector('.dropdown-submenu');
-    var isOpen = false; 
+    let dropSearch = document.querySelector('.drop-search');
+    let submenu = document.querySelector('.dropdown-submenu');
+    let isOpen = false; 
     
     dropSearch.addEventListener('click', function() {
       if (isOpen) {

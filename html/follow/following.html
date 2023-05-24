@@ -7,25 +7,29 @@
     <title>following</title>
     <link href="/css/import.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="/css/follow/following.css">
+    <script src="/js/follow/follow.js"></script>
 </head>
 <body>
    <!-- header -->
    <header>
-    <!--header-wrap-->
-    <div class="header-wrap">
-        <!--header-->
-        <div class="header2">
-            <h1 class="back"><a><img src="/images/back.png" alt="logo"/></a></h1>
-            <h2 class="title">팔로잉</h2>
-        </div>  
-        <p class="gray_border"></p>
-    <!-- header-->
-    </div>
-    <!--header-wrap-->
-</header>
+        <!--header-wrap-->
+        <div class="header-wrap">
+            <!--header-->
+            <div class="header2">
+                <h1 class="d-none">펄링</h1>
+                <a class="back"><img src="/images/back.png" alt="logo"/></a>
+                <h2 class="title">팔로잉</h2>
+            </div>  
+            <p class="gray_border"></p>
+        <!-- header-->
+        </div>
+        <!--header-wrap-->
+    </header>
 
+    <!-- wrap -->
     <div class="following-wrap">
         <div class="following-follower">
+            <h2 class="d-none">메뉴</h2>
             <div class="following-selection">
                 <p class="following">팔로잉</p>
                 <p>|</p>
@@ -33,7 +37,8 @@
             </div>
         </div>    
         <div class="following-list">
-            <ul>
+            <h2 class="d-none">목록</h2>
+            <ul class="followers">
                 <li>
                     <img src = "/images/profile/profile_yj.png">
                     <p>연주</p>
@@ -57,5 +62,6 @@
             </ul>
         </div>     
     </div>
+    <!-- wrap -->    
 </body>
 </html>
